@@ -2,7 +2,8 @@
 
 :root {
     --nav-color: rgba(255, 255, 255, .9);
-    --nav-font-size: calc(5px + 2vmin);
+    --nav-font-size: calc(3px + 2vmin);
+    --logo-font-size: calc(6px + 2vmin);
     --nav-box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
     --navbar-height: 5vh;
     --m-font: 'Alumni Sans';
@@ -52,7 +53,7 @@ nav ul li a {
 .logo-text {
     font-weight: bold;
     font-family: var(--m-font);
-    font-size: var(--nav-font-size);
+    font-size: var(--logo-font-size);
     padding-left: 5px;
     color: black;
 }

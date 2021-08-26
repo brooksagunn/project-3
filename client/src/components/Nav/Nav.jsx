@@ -11,17 +11,17 @@ export default function Nav() {
         <p>Fall Sale starts 9/17! Free Shipping on Domestic Orders 0ver $100</p>
         <div className="navbar">
         <ul className="menu">
-            <li><a id="accessories" href="#accessories">Accessories</a></li>
-            <li><a id="seasons" href="#seasons">Seasons</a></li>
-            <li><a id="more" href="#more">More ▾</a></li>
+            <li><a id="accessories" href="#accessories">accessories</a></li>
+            <li><a id="seasons" href="#seasons">seasons</a></li>
+            <li><a id="more" href="#more">more ▾</a></li>
         </ul>
         <div className="logo-text">
             enCapsulate
         </div>
         <ul className="menu">
             {/* <li><a id="search" href="#clothes">🔎︎ Search</a></li> */}
-            <li><a id="bag" href="#bag">Bag (0)</a></li>
-            <li><a id="login" href="#login">Login</a></li>
+            <li><a id="bag" href="#bag">bag (0)</a></li>
+            <li><a id="login" href="#login">login</a></li>
         </ul>
         <div className="collapse" onClick={handleCollapse}>
             <div className="line1"></div>
