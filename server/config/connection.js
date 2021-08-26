@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/${DB NAME HERE}', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/encapsulate', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
