@@ -4,8 +4,12 @@ import handleCollapse from '../../utils/collapse'
 export default function Nav() {
 
     return(
+        
     
-    <nav className="navbar">
+    
+        <nav className="banner">
+        <p>Fall Sale starts 9/17! Free Shipping on Domestic Orders 0ver $100</p>
+        <div className="navbar">
         <ul className="menu">
             <li><a id="accessories" href="#accessories">Accessories</a></li>
             <li><a id="seasons" href="#seasons">Seasons</a></li>
@@ -24,7 +28,11 @@ export default function Nav() {
             <div className="line2"></div>
             <div className="line3"></div>
         </div>
+    </div>
+
     </nav>
+
+    
     
     );
 
