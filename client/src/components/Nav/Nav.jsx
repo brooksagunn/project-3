@@ -19,13 +19,13 @@ export default function Nav() {
         <div className="navbar">
             <ul className="menu">
                 <li>
-                    <a className="clearfix" id="accessories" href="#accessories"><span className="left"><PaletteIcon /></span> accessories</a>
+                    <a id="accessories" href="#accessories"><span className="left"><PaletteIcon /></span> accessories</a>
                 </li>
                 <li>
-                    <a className="clearfix" id="seasons" href="#seasons"><span className="left"><EcoIcon /></span> seasons</a>
+                    <a id="seasons" href="#seasons"><span className="left"><EcoIcon /></span> seasons</a>
                 </li>
                 <li>
-                    <a className="clearfix" id="more" href="#more"><span className="left"><ExpandMoreIcon /></span> more</a>
+                    <a id="more" href="#more"><span className="left"><ExpandMoreIcon /></span> more</a>
                 </li>
             </ul>
             <div className="logo-text">
@@ -33,8 +33,8 @@ export default function Nav() {
             </div>
             <ul className="menu">
                 {/* <li><a id="search" href="#clothes">🔎︎ Search</a></li> */}
-                <li><a className="clearfix" id="bag" href="#bag"><span className="left"><LocalMallIcon /></span> bag (0)</a></li>
-                <li><a className="clearfix" id="login" href="#login"><span className="left"><PersonIcon /></span> login</a></li>
+                <li><a id="bag" href="#bag"><span className="left"><LocalMallIcon /></span> bag (0)</a></li>
+                <li><a id="login" href="#login"><span className="left"><PersonIcon /></span> login</a></li>
             </ul>
             <div className="collapse" onClick={handleCollapse}>
                 <div className="line1"></div>
