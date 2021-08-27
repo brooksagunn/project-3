@@ -15,6 +15,9 @@ db.once("open", async () => {
         name: "summer",
       },
       {
+        name: "spring",
+      },
+      {
         name: "fall",
       },
     ]);
@@ -40,6 +43,13 @@ db.once("open", async () => {
         stock: 2,
         category: categories[2]._id,
       },
+      {
+        name: "spring wear",
+        description: "wear for the spring",
+        price: 19.99,
+        stock: 3,
+        category: categories[3]._id,
+      }
     ]);
     const users = await User.insertMany([
       {
