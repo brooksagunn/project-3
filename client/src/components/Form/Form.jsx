@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Form.css';
 
 import { checkPass, validateEmail } from '../../utils/formHelpers';
 
@@ -23,24 +24,23 @@ export default function Form() {
     }
 
     return (
-        <div>
+        <div className="form-div">
             <form className="form">
+                <h1>Sign-up</h1>
+                <label htmlFor="email">Email</label>
                 <input 
                     type="email" 
                     name="email"
-                    value={email}
                 />
-    
+                <label htmlFor="user">Username</label>
                 <input 
                     type="text" 
                     name="user"
-                    value={user} 
                 />
-    
+                <label htmlFor="pass">Password</label>
                 <input 
                     type="password" 
                     name="pass"
-                    value={pass}
                 />
     
                 <button 
@@ -52,7 +52,7 @@ export default function Form() {
     
                 </button>
             </form>
-    
+
             {err && (
                 <div>
                 <p className="error-text">{err}</p>
