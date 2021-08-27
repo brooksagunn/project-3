@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300&display=swap');
 
 :root {
-    --nav-color: rgba(255, 255, 255, .9);
+    --nav-color: rgb(255, 255, 255);
     --nav-font-size: calc(3px + 2vmin);
     --logo-font-size: calc(6px + 2vmin);
     --nav-box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);

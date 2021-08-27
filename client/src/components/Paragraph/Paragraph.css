@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300&display=swap');
+
+h3 {
+    font-family: 'Alumni Sans';
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    position: absolute;  
+    top: 250px;
+    left: 80px;
+}
+
+.paragraph {
+    font-family: 'Alumni Sans';
+    color: black;
+    font-size: 30px;   
+    display: flex; 
+    position: relative;
+    left: 80px;
+    bottom: 380px;
+}
+
+@media only screen and (max-width: 1024px) {
+    div.paragraph {
+      font-size: 18px;
+      word-wrap:normal;
+      left: 12px;
+      bottom: 350px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    h3 {
+      font-size: 22px;
+      left: 12px;
+      bottom: 350px;
+    }
+  }
