@@ -24,9 +24,9 @@ export default function Nav() {
                 <li>
                     <a id="seasons" href="#seasons"><span className="left"><EcoIcon /></span> seasons</a>
                 </li>
-                <li>
+                {/* <li>
                     <a id="more" href="#more"><span className="left"><ExpandMoreIcon /></span> more</a>
-                </li>
+                </li> */}
             </ul>
             <div className="logo-text">
                 enCapsulate
