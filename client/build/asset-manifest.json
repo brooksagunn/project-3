@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.873e399d.chunk.css",
-    "main.js": "/static/js/main.263e37df.chunk.js",
-    "main.js.map": "/static/js/main.263e37df.chunk.js.map",
+    "main.css": "/static/css/main.0ed6f403.chunk.css",
+    "main.js": "/static/js/main.0574643f.chunk.js",
+    "main.js.map": "/static/js/main.0574643f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.02db76a7.js",
     "runtime-main.js.map": "/static/js/runtime-main.02db76a7.js.map",
-    "static/js/2.bfc4b2b8.chunk.js": "/static/js/2.bfc4b2b8.chunk.js",
-    "static/js/2.bfc4b2b8.chunk.js.map": "/static/js/2.bfc4b2b8.chunk.js.map",
+    "static/js/2.e71a817a.chunk.js": "/static/js/2.e71a817a.chunk.js",
+    "static/js/2.e71a817a.chunk.js.map": "/static/js/2.e71a817a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.873e399d.chunk.css.map": "/static/css/main.873e399d.chunk.css.map",
-    "static/js/2.bfc4b2b8.chunk.js.LICENSE.txt": "/static/js/2.bfc4b2b8.chunk.js.LICENSE.txt",
+    "static/css/main.0ed6f403.chunk.css.map": "/static/css/main.0ed6f403.chunk.css.map",
+    "static/js/2.e71a817a.chunk.js.LICENSE.txt": "/static/js/2.e71a817a.chunk.js.LICENSE.txt",
     "static/media/Header.css": "/static/media/capsule_wardrobe.ef03590d.png",
     "static/media/Seasons.css": "/static/media/seasons.41e1ce9f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.02db76a7.js",
-    "static/js/2.bfc4b2b8.chunk.js",
-    "static/css/main.873e399d.chunk.css",
-    "static/js/main.263e37df.chunk.js"
+    "static/js/2.e71a817a.chunk.js",
+    "static/css/main.0ed6f403.chunk.css",
+    "static/js/main.0574643f.chunk.js"
   ]
 }

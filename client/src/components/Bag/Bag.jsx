@@ -7,7 +7,7 @@ export default function Bag() {
     return (
         
         <div className="title">
-            <button component={Link} to="/checkout" class="waves-effect waves-light btn"><i class="material-icons right"></i>Checkout</button>
+            <a href="/checkout"><button class="waves-effect waves-light btn"><i class="material-icons right"></i>Checkout</button></a>
         </div>
 
         

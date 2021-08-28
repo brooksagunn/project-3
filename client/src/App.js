@@ -4,7 +4,7 @@ import Bag from './components/Bag/Bag';
 import Header from './components/Header/Header';
 import Seasons from './components/Seasons/Seasons';
 import Paragraph from './components/Paragraph/Paragraph';
-import Checkout from './components/Checkout/Checkout'
+import Checkout from './components/CheckoutForm/Checkout/Checkout'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
