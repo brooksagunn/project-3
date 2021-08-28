@@ -32,8 +32,6 @@ export default function App() {
             <Route exact path="/login">
             <Login />
             </Route>
-
-            
           </Switch>
         </div>
       </Router>
