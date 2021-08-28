@@ -3,10 +3,12 @@
     padding: 0;
 }
 
-section {
+body {
     height: 100vh;
-    background-image: url('../../assets/images/seasons.png');
+    background-image: url('../../assets/images/seasons2.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
+
 
     

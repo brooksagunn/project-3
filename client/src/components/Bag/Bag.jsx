@@ -7,7 +7,7 @@ export default function Bag() {
     return (
         
         <div className="title">
-        <button class="waves-effect waves-light btn"><i class="material-icons right"></i>Add to Bag</button>
+        <button className="waves-effect waves-light btn"><i className="material-icons right"></i>Add to Bag</button>
         </div>
 
         
