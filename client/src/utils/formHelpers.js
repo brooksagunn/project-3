@@ -1,5 +1,6 @@
 export function checkPass(input) {
-    return input.match(/^[A-Za-z]\w{7,14}$/);
+    if(input.match(/^[A-Za-z]\w{7,14}$/)) return true; 
+    return false;
 }
 
 export function validateEmail(email) {
