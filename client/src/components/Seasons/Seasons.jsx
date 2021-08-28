@@ -5,49 +5,66 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
 
-         
-    
-
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    position: 'absolute',
+  gridContainer: {
+    display: 'flex',  
+    alignSelf: 'center',
+    alignItems: 'center',
+    position: 'relative',
+    top: '240px',
+    margin: 0,
+    padding: 0,
   },
   
   paper: {
-    padding: theme.spacing(20),
-    textAlign: 'center',
-    top: '240px',
-    left: '10px',
-    width: '50vh',
-    position: 'relative',
-    height: '50vh',
-    opacity: '85%',
-    backgroundColor: '#0f0f0f',
-    color: '#ffffff',
+    padding: theme.spacing(15),
+    display: 'flex',
+    top: '250px',
+    height: '58vh',
+    width: '88%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+    color: '#fff',
+    backgroundColor: '#1c1c1c',
+    opacity: '90%',
   },
+
+  grid: {
+      position: 'relative',
+      height: '50vh',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+  }
+
 }));
 
 export default function FullWidthGrid() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={3}>
-        <Grid item xs={3} sm={3}>
-          <Paper className={classes.paper}>xs=6 sm=3</Paper>
+    <section className={classes.gridContainer}>
+      <Grid container spacing={0}>
+
+        <Grid className={classes.grid} item xs={3} sm={3}>
+          <Paper className={classes.paper}>product img here</Paper>
         </Grid>
-        <Grid item xs={3} sm={3}>
-          <Paper className={classes.paper}>xs=6 sm=3</Paper>
+
+        <Grid className={classes.grid} item xs={3} sm={3}>
+          <Paper className={classes.paper}>product img here</Paper>
         </Grid>
-        <Grid item xs={3} sm={3}>
-          <Paper className={classes.paper}>xs=6 sm=3</Paper>
+
+        <Grid className={classes.grid} item xs={3} sm={3}>
+          <Paper className={classes.paper}>product img here</Paper>
         </Grid>
-        <Grid item xs={3} sm={3}>
-          <Paper className={classes.paper}>xs=6 sm=3</Paper>
+
+        <Grid className={classes.grid} item xs={3} sm={3}>
+          <Paper className={classes.paper}>product img here</Paper>
         </Grid>
+
       </Grid>
-    </div>
+    </section>
   );
 }
 
