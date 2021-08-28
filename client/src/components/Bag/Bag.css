@@ -1,0 +1,14 @@
+
+
+body {
+    background-color: antiquewhite;
+}
+
+.title {
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 200px;
+}

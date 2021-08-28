@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 h3 {
     font-family: 'Alumni Sans';
     font-size: 40px;
@@ -15,24 +20,26 @@ h3 {
     color: black;
     font-size: 30px;   
     display: flex; 
-    position: relative;
+    position: absolute;
     left: 80px;
-    bottom: 380px;
+    top: 350px;
+    width: 500px;
 }
 
 @media only screen and (max-width: 1024px) {
-    div.paragraph {
+    .paragraph {
       font-size: 18px;
       word-wrap:normal;
-      left: 12px;
+      left: 40px;
       bottom: 350px;
+      width: 210px;
     }
   }
 
   @media only screen and (max-width: 1024px) {
     h3 {
       font-size: 22px;
-      left: 12px;
+      left: 20px;
       bottom: 350px;
     }
   }
