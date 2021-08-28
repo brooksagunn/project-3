@@ -36,6 +36,24 @@ export default function Login() {
         <label for="email">Email</label>
       </div>
     </div>
+    <div className="title">
+        <button class="waves-effect waves-light btn"><i class="material-icons right"></i>Sign Up</button>
+    </div>
+    <div class="row email">
+      <div class="input-field col s6 push-s3">
+        <input id="email" type="email" class="validate"></input>
+        <label for="email">Email</label>
+      </div>
+    </div>
+    <div class="row password">
+      <div class="input-field col s6 push-s3">
+        <input id="password" type="password" class="validate"></input>
+        <label for="password">Password</label>
+      </div>
+    </div>
+    <div className="title">
+        <button class="waves-effect waves-light btn"><i class="material-icons right"></i>Log In</button>
+    </div>
   </form>
 </div>
 
