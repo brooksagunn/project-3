@@ -10,10 +10,10 @@ export default function Paragraph() {
                 
             <div className="paragraph">
                 <p>
-                These practices reflect our passion here <br></br>
-                at enCapsulate. We strongly believe in  <br></br>
-                conservation and an all-embracing approach <br></br>
-                to clothing. Help us leave behind the<br></br> 
+                These practices reflect our passion here 
+                at enCapsulate. We strongly believe in  
+                conservation and an all-embracing approach
+                to clothing. Help us leave behind the
                 world a better way. 
                 </p>
             </div>

@@ -1,5 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 section {
     height: 100vh;
     background-image: url('../../assets/images/seasons.png');
     background-size: cover;
 }
+
+    
