@@ -32,6 +32,10 @@ export default function App() {
             <Route exact path="/login">
             <Login />
             </Route>
+
+            <Route exact path="/checkout">
+              <Checkout />
+            </Route>
           </Switch>
         </div>
       </Router>
