@@ -1,9 +1,11 @@
 import Nav from './components/Nav/Nav';
+import Login from './components/Login/Login';
+import Bag from './components/Bag/Bag';
 import Header from './components/Header/Header';
-import Section from './components/Section/Section';
+import Seasons from './components/Seasons/Seasons';
 import Paragraph from './components/Paragraph/Paragraph';
-import Form from './components/Form/Form';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 
 
@@ -13,15 +15,22 @@ export default function App() {
         <div>
           <Nav />
           <Switch>
+
             <Route exact path="/">
               <Header/>
               <Paragraph />
             </Route>
+
             <Route exact path="/seasons">
-              <Section />
+              <Seasons />
             </Route>
-            <Route exact path="/form">
-              <Form />
+
+            <Route exact path="/bag">
+            <Bag />
+            </Route>
+
+            <Route exact path="/login">
+            <Login />
             </Route>
           </Switch>
         </div>
