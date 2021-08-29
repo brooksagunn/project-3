@@ -6,7 +6,9 @@ export default function Bag() {
     return (
         
         <div className="title">
-        <button className="waves-effect waves-light btn"><i className="material-icons right"></i>Add to Bag</button>
+            <form action="/create-checkout-session" method="POST">
+                <button type="submit" className="waves-effect waves-light btn"><i className="material-icons right"></i>Checkout</button>
+            </form>
         </div>
 
         
