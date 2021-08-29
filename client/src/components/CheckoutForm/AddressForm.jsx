@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 import FormInput from './FormInput';
 
 
-export default function AddressForm() {
+export default function AddressForm({ test }) {
     const methods = useForm();
 
     return (
         <div>
             <Typography variant="h6" gutterButtom>Shipping Address</Typography>
             <FormProvider {...methods}>
-                <form onSubmit=''>
+                <form onSubmit={methods.handleSubmit((shippingData) => test({ ...shippingData }))}>
                     <Grid container spacing={3}>
                         <FormInput name="firstName" label="First Name" />
                         <FormInput name="lastName" label="Last Name" />

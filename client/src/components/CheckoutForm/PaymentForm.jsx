@@ -5,9 +5,11 @@ import { loadStripe } from '@stripe/stripe-js';
 
 import Review from './Review';
 
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
+const dotenv = require('dotenv');
+dotenv.config();
 
-
+const stripePK = 'pk_test_51JTd9YBEhE86uu856lV79yDZujrdfaHciXV6ztaCpAJcPGDkUlIQLGcRmMbFFKzi616PHa5NrWO4AFWkBezuKPom0009Ro1ib2';
+const stripePromise = loadStripe(stripePK);
 
 export default function PaymentForm({ nextStep, backStep, shippingData, }) {
   const handleSubmit = async (event, elements, stripe) => {
@@ -32,6 +34,7 @@ export default function PaymentForm({ nextStep, backStep, shippingData, }) {
           },
         },
       };
+      console.log(orderData);
       nextStep();
     }
   };
