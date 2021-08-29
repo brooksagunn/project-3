@@ -32,7 +32,9 @@ export default function Nav() {
             </a>
             <ul className="menu">
                 {/* <li><a id="search" href="#clothes">🔎︎ Search</a></li> */}
-                <li><a id="bag" href="/bag"><span className="left"><LocalMallIcon /></span> bag (0)</a></li>
+                <li><a id="bag" href="/bag"><span className="left">
+        <button class="waves-effect waves-light btn"><i class="material-icons right"></i>Add to Bag</button>
+        </span> bag (0)</a></li>
                 <li><a id="login" href="/login"><span className="left"><PersonIcon /></span> login</a></li>
             </ul>
             <div className="collapse" onClick={handleCollapse}>

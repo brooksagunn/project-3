@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Bag.css';
 
 
@@ -13,9 +12,3 @@ export default function Bag() {
         
     );
 }
-
-
-
-
-
-ReactDOM.render(<Bag />, document.getElementById('root'));
