@@ -4,6 +4,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Product from '../../components/Product/Product';
+import LocalMallIcon from '@material-ui/icons/LocalMall';
+import ButtonGroup from "@material-ui/core/ButtonGroup";
+import Badge from "@material-ui/core/Badge";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import Button from "@material-ui/core/Button";
+import AddIcon from "@material-ui/icons/Add";
+import RemoveIcon from "@material-ui/icons/Remove";
 
 
 
@@ -58,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
 
   price: {
     position: 'absolute',
-    zIndex: 1000,
+    zIndex: 500,
     display: 'flex',
     bottom: '65px',
     fontFamily: 'Raleway',
@@ -69,13 +76,14 @@ const useStyles = makeStyles((theme) => ({
 
   bagButton: {
     position: 'absolute',
-    zIndex: 1000,
+    zIndex: 500,
     display: 'flex',
-    bottom: '20px',
+    bottom: '18px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
-    padding: '8px',
-    borderRadius: '8px'
+    padding: '9.5px',
+    borderRadius: '8px',
+    left: '300px'
   },
 
   photoFooter: {
@@ -92,12 +100,81 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Raleway',
     fontSize: '16px',
     fontWeight: 'bold'
-  }
+  },
+
+  addBag1: {
+    position: 'absolute',
+    zIndex: 500,
+    display: 'flex',
+    bottom: '20px',
+    fontFamily: 'Raleway',
+    fontWeight: 'bold',
+    padding: '2px',
+    textAlign: 'center',
+    alignContent: 'center',
+    borderRadius: '8px',
+    backgroundColor: '#fff',
+    width: '128px',
+    height: '36px',
+    left: '60px'
+  },
+
+  addBag2: {
+    position: 'absolute',
+    zIndex: 500,
+    display: 'flex',
+    bottom: '20px',
+    fontFamily: 'Raleway',
+    fontWeight: 'bold',
+    padding: '2px',
+    textAlign: 'center',
+    alignContent: 'center',
+    borderRadius: '8px',
+    backgroundColor: '#fff',
+    width: '128px',
+    height: '36px',
+    left: '60px'
+  },
+
+  addBag3: {
+    position: 'absolute',
+    zIndex: 500,
+    display: 'flex',
+    bottom: '20px',
+    fontFamily: 'Raleway',
+    fontWeight: 'bold',
+    padding: '2px',
+    textAlign: 'center',
+    alignContent: 'center',
+    borderRadius: '8px',
+    backgroundColor: '#fff',
+    width: '128px',
+    height: '36px',
+    left: '60px'
+  },
+
+  addBag4: {
+    position: 'absolute',
+    zIndex: 500,
+    display: 'flex',
+    bottom: '20px',
+    fontFamily: 'Raleway',
+    fontWeight: 'bold',
+    padding: '2px',
+    textAlign: 'center',
+    alignContent: 'center',
+    borderRadius: '8px',
+    backgroundColor: '#fff',
+    width: '128px',
+    height: '36px',
+    left: '60px'
+  },
 
 }));
 
 export default function FullWidthGrid() {
   const classes = useStyles();
+  const [itemCount, setItemCount] = React.useState(1);
 
   return (
       
@@ -111,6 +188,31 @@ export default function FullWidthGrid() {
             <div className={classes.photoTitle}>winter</div>
             <p className={classes.price}>$199</p>
             <button className={classes.bagButton}>Add to Bag</button>
+            <div className={classes.addBag1}>
+          <div>
+            <Badge color="secondary" badgeContent={itemCount}>
+              <LocalMallIcon />{" "}
+            </Badge>
+            <ButtonGroup>
+              <Button
+                onClick={() => {
+                  setItemCount(Math.max(itemCount - 1, 0));
+                }}
+              >
+                {" "}
+                <RemoveIcon fontSize="small" />
+              </Button>
+              <Button
+                onClick={() => {
+                  setItemCount(itemCount + 1);
+                }}
+              >
+                {" "}
+                <AddIcon fontSize="small" />
+              </Button>
+            </ButtonGroup>
+          </div>
+        </div>
             <Paper className={classes.paper}><Product /></Paper>
             <div className={classes.photoFooter}> Designed for colder climates, this capsule includes the perfect winter wear that will also leave your wallet warm and fuzzy.</div>
             </Grid>
@@ -119,6 +221,31 @@ export default function FullWidthGrid() {
             <div className={classes.photoTitle}>spring</div>
             <p className={classes.price}>$149</p>
             <button className={classes.bagButton}>Add to Bag</button>
+            <div className={classes.addBag2}>
+          <div>
+            <Badge color="secondary" badgeContent={itemCount}>
+            <LocalMallIcon />{" "}
+            </Badge>
+            <ButtonGroup>
+              <Button
+                onClick={() => {
+                  setItemCount(Math.max(itemCount - 1, 0));
+                }}
+              >
+                {" "}
+                <RemoveIcon fontSize="small" />
+              </Button>
+              <Button
+                onClick={() => {
+                  setItemCount(itemCount + 1);
+                }}
+              >
+                {" "}
+                <AddIcon fontSize="small" />
+              </Button>
+            </ButtonGroup>
+          </div>
+        </div>
             <Paper className={classes.paper}><Product /></Paper>
             <div className={classes.photoFooter}> Whether it's going to be a sunny or soaked season, hot or humid, our spring capsule will accompany you every step of the way.</div>
             </Grid>
@@ -127,6 +254,31 @@ export default function FullWidthGrid() {
             <div className={classes.photoTitle}>summer</div>
             <p className={classes.price}>$179</p>
             <button className={classes.bagButton}>Add to Bag</button>
+            <div className={classes.addBag3}>
+          <div>
+            <Badge color="secondary" badgeContent={itemCount}>
+            <LocalMallIcon />{" "}
+            </Badge>
+            <ButtonGroup>
+              <Button
+                onClick={() => {
+                  setItemCount(Math.max(itemCount - 1, 0));
+                }}
+              >
+                {" "}
+                <RemoveIcon fontSize="small" />
+              </Button>
+              <Button
+                onClick={() => {
+                  setItemCount(itemCount + 1);
+                }}
+              >
+                {" "}
+                <AddIcon fontSize="small" />
+              </Button>
+            </ButtonGroup>
+          </div>
+        </div>
             <Paper className={classes.paper}><Product /></Paper>
             <div className={classes.photoFooter}> No need to sweat your style this summer, this collection is sure to beat the heat and fashion police. Limited quantity, order now!</div>
             </Grid>
@@ -134,12 +286,38 @@ export default function FullWidthGrid() {
             <Grid className={classes.grid} item xs={3} sm={3}>
             <div className={classes.photoTitle}>fall</div>
             <p className={classes.price}>$179</p>
+            <div className={classes.addBag4}>
+          <div>
+            <Badge color="secondary" badgeContent={itemCount}>
+            <LocalMallIcon />{" "}
+            </Badge>
+            <ButtonGroup>
+              <Button
+                onClick={() => {
+                  setItemCount(Math.max(itemCount - 1, 0));
+                }}
+              >
+                {" "}
+                <RemoveIcon fontSize="small" />
+              </Button>
+              <Button
+                onClick={() => {
+                  setItemCount(itemCount + 1);
+                }}
+              >
+                {" "}
+                <AddIcon fontSize="small" />
+              </Button>
+            </ButtonGroup>
+          </div>
+        </div>
             <button className={classes.bagButton}>Add to Bag</button>
             <Paper className={classes.paper}><Product /></Paper>
             <div className={classes.photoFooter}> We dare you not to fall in love with these fall favorites. Although paired perfectly with Pumpkin Spice Latte's, this capsule is anything but basic.</div>
             </Grid>
 
-        </Grid>
+        </Grid>      
+
         </section>
 </div>
   );
