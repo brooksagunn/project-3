@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     alignSelf: 'center',
     alignItems: 'center',
     position: 'relative',
-    top: '240px',
+    top: '230px',
     margin: 0,
     padding: 0,
   },
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(15),
     display: 'flex',
     top: '250px',
-    height: '58vh',
+    height: '60vh',
     width: '88%',
     justifyContent: 'center',
     alignItems: 'center',
@@ -46,11 +46,11 @@ const useStyles = makeStyles((theme) => ({
     color: '#1c1c1c',
     position: 'fixed',
     display: 'flex',
-    top: '110px',
+    top: '100px',
     justifyContent: 'center',
     padding: '8px',
     borderRadius: '8px',
-    fontFamily: 'Alumni Sans',
+    fontFamily: 'Raleway',
     fontSize: '30px',
     fontWeight: 'bold'
   },
@@ -61,12 +61,14 @@ const useStyles = makeStyles((theme) => ({
     color: '#1c1c1c',
     position: 'fixed',
     display: 'flex',
-    bottom: '12px',
+    bottom: '15px',
     justifyContent: 'center',
     width: '250px',
     padding: '8px',
     borderRadius: '8px',
-    fontFamily: 'Alumni Sans',
+    fontFamily: 'Raleway',
+    fontSize: '12px',
+    fontWeight: 'bold'
   }
 
 }));
@@ -83,35 +85,27 @@ export default function FullWidthGrid() {
         <Grid container spacing={0}>
 
             <Grid className={classes.grid} item xs={3} sm={3}>
-            <div className={classes.photoTitle}>/ winter /</div>
-            <Paper className={classes.paper}>product img here</Paper>
-            <div className={classes.photoFooter}> Designed for colder climates, this capsule<br></br>
-            includes the perfect winter wear that will<br></br>
-            also leave your wallet warm and fuzzy.</div>
+            <div className={classes.photoTitle}>winter</div>
+            <Paper className={classes.paper}>product img</Paper>
+            <div className={classes.photoFooter}> Designed for colder climates, this capsule includes the perfect winter wear that will also leave your wallet warm and fuzzy.</div>
             </Grid>
 
             <Grid className={classes.grid} item xs={3} sm={3}>
-            <div className={classes.photoTitle}>/ spring /</div>
-            <Paper className={classes.paper}>product img here</Paper>
-            <div className={classes.photoFooter}> Designed for colder climates, this capsule<br></br>
-            includes the perfect winter wear that will<br></br>
-            also leave your wallet warm and fuzzy.</div>
+            <div className={classes.photoTitle}>spring</div>
+            <Paper className={classes.paper}>product img</Paper>
+            <div className={classes.photoFooter}> Whether it's going to be a sunny or soaked season, hot or humid, our spring capsule will accompany you every step of the way.</div>
             </Grid>
 
             <Grid className={classes.grid} item xs={3} sm={3}>
-            <div className={classes.photoTitle}>\ summer \</div>
-            <Paper className={classes.paper}>product img here</Paper>
-            <div className={classes.photoFooter}> Designed for colder climates, this capsule<br></br>
-            includes the perfect winter wear that will<br></br>
-            also leave your wallet warm and fuzzy.</div>
+            <div className={classes.photoTitle}>summer</div>
+            <Paper className={classes.paper}>product img</Paper>
+            <div className={classes.photoFooter}> No need to sweat your style this summer, this collection is sure to beat the heat and fashion police. Limited quantity, order now!</div>
             </Grid>
 
             <Grid className={classes.grid} item xs={3} sm={3}>
-            <div className={classes.photoTitle}>\ fall \</div>
-            <Paper className={classes.paper}>product img here</Paper>
-            <div className={classes.photoFooter}> Designed for colder climates, this capsule<br></br>
-            includes the perfect winter wear that will<br></br>
-            also leave your wallet warm and fuzzy.</div>
+            <div className={classes.photoTitle}>fall</div>
+            <Paper className={classes.paper}>product img</Paper>
+            <div className={classes.photoFooter}> We dare you not to fall in love with these fall favorites. Although paired perfectly with Pumpkin Spice Latte's, this capsule is anything but basic.</div>
             </Grid>
 
         </Grid>
