@@ -18,7 +18,7 @@ export default function Checkout() {
         nextStep();
     };
 
-    const Form = () => activeStep === 0 ? <AddressForm next={nextStep} setShippingData={setShippingData} test={test} /> : <PaymentForm nextStep={nextStep} shippingData={shippingData} />
+    const Form = () => (activeStep === 0 ? <AddressForm next={nextStep} setShippingData={setShippingData} test={test} /> : <PaymentForm nextStep={nextStep} backStep={backStep} shippingData={shippingData} />);
     const Confirmation = () => (
         <div>
             Confirmation
