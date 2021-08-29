@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import Seasons from './components/Seasons/Seasons';
 import Paragraph from './components/Paragraph/Paragraph';
 import Checkout from './components/CheckoutForm/Checkout/Checkout'
+import ProductGrid from './components/ProductGrid/ProductGrid';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 export default function App() {
@@ -25,16 +26,20 @@ export default function App() {
             </Route>
 
             <Route exact path="/bag">
-            <Bag />
+              <Bag />
             </Route>
 
             <Route exact path="/login">
-            <Login />
+              <Login />
             </Route>
 
             <Route exact path="/checkout">
               <Checkout />
             </Route>
+            <Route exact path="/products">
+              <ProductGrid />
+            </Route>
+
           </Switch>
         </div>
       </Router>

@@ -12,9 +12,9 @@ export default function Nav() {
     return(
         
     <nav className="banner">
-        <div className="mini-nav">
-            <p>Fall Sale starts 9/17! Free Shipping on Domestic Orders 0ver $100</p>
-        </div>
+        <section className="mini-nav">
+            <p className="fallSale">Fall Sale starts 9/17! Free Shipping on Domestic Orders 0ver $100</p>
+        </section>
         <div className="navbar">
             <ul className="menu">
                 <li>
@@ -32,7 +32,9 @@ export default function Nav() {
             </a>
             <ul className="menu">
                 {/* <li><a id="search" href="#clothes">🔎︎ Search</a></li> */}
-                <li><a id="bag" href="/bag"><span className="left"><LocalMallIcon /></span> bag (0)</a></li>
+                <li><a id="bag" href="/bag"><span className="left">
+        <button class="waves-effect waves-light btn"><i class="material-icons right"></i>Add to Bag</button>
+        </span> bag (0)</a></li>
                 <li><a id="login" href="/login"><span className="left"><PersonIcon /></span> login</a></li>
             </ul>
             <div className="collapse" onClick={handleCollapse}>

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Bag.css';
 
 
@@ -8,16 +7,10 @@ export default function Bag() {
         
         <div className="title">
             <form action="/create-checkout-session" method="POST">
-                <button type="submit" class="waves-effect waves-light btn"><i class="material-icons right"></i>Checkout</button>
+                <button type="submit" className="waves-effect waves-light btn"><i className="material-icons right"></i>Checkout</button>
             </form>
         </div>
 
         
     );
 }
-
-
-
-
-
-ReactDOM.render(<Bag />, document.getElementById('root'));
