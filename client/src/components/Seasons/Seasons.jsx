@@ -1,5 +1,11 @@
 import React from 'react';
 import './Seasons.css';
+import Winter from '../../assets/images/winter-capsule.jpg';
+import Fall from '../../assets/images/fall-capsule.jpg';
+import Spring from '../../assets/images/spring-capsule.jpg';
+import Summer from '../../assets/images/summer-capsule.jpg';
+
+
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -7,10 +13,11 @@ import Product from '../../components/Product/Product';
 import LocalMallIcon from '@material-ui/icons/LocalMall';
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import Badge from "@material-ui/core/Badge";
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Button from "@material-ui/core/Button";
 import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
+
+const seasons=[Winter, Fall, Spring, Summer]
 
 
 
@@ -186,34 +193,34 @@ export default function FullWidthGrid() {
 
             <Grid className={classes.grid} item xs={3} sm={3}>
             <div className={classes.photoTitle}>winter</div>
-            <p className={classes.price}>$199</p>
-            <button className={classes.bagButton}>Add to Bag</button>
+              <p className={classes.price}>$199</p>
+                <button className={classes.bagButton}>Add to Bag</button>
             <div className={classes.addBag1}>
-          <div>
-            <Badge color="secondary" badgeContent={itemCount}>
-              <LocalMallIcon />{" "}
-            </Badge>
-            <ButtonGroup>
-              <Button
-                onClick={() => {
-                  setItemCount(Math.max(itemCount - 1, 0));
-                }}
-              >
-                {" "}
-                <RemoveIcon fontSize="small" />
-              </Button>
-              <Button
-                onClick={() => {
-                  setItemCount(itemCount + 1);
-                }}
-              >
-                {" "}
-                <AddIcon fontSize="small" />
-              </Button>
-            </ButtonGroup>
-          </div>
-        </div>
-            <Paper className={classes.paper}><Product /></Paper>
+              <Badge color="secondary" badgeContent={itemCount}>
+                <LocalMallIcon />{" "}
+              </Badge>
+                <ButtonGroup>
+                  <Button
+                    onClick={() => {
+                      setItemCount(Math.max(itemCount - 1, 0));
+                    }}
+                  >
+                    {" "}
+                    <RemoveIcon fontSize="small" />
+                  </Button>
+                  <Button
+                    onClick={() => {
+                      setItemCount(itemCount + 1);
+                    }}
+                  >
+                    {" "}
+                    <AddIcon fontSize="small" />
+                  </Button>
+                </ButtonGroup>
+            </div>
+
+            <Paper className={classes.paper}><Product name={seasons[0]}/></Paper>
+
             <div className={classes.photoFooter}> Designed for colder climates, this capsule includes the perfect winter wear that will also leave your wallet warm and fuzzy.</div>
             </Grid>
 
@@ -246,7 +253,7 @@ export default function FullWidthGrid() {
             </ButtonGroup>
           </div>
         </div>
-            <Paper className={classes.paper}><Product /></Paper>
+            <Paper className={classes.paper}><Product name={seasons[1]}/></Paper>
             <div className={classes.photoFooter}> Whether it's going to be a sunny or soaked season, hot or humid, our spring capsule will accompany you every step of the way.</div>
             </Grid>
 
@@ -279,7 +286,7 @@ export default function FullWidthGrid() {
             </ButtonGroup>
           </div>
         </div>
-            <Paper className={classes.paper}><Product /></Paper>
+            <Paper className={classes.paper}><Product name={seasons[2]}/></Paper>
             <div className={classes.photoFooter}> No need to sweat your style this summer, this collection is sure to beat the heat and fashion police. Limited quantity, order now!</div>
             </Grid>
 
@@ -289,7 +296,7 @@ export default function FullWidthGrid() {
             <div className={classes.addBag4}>
           <div>
             <Badge color="secondary" badgeContent={itemCount}>
-            <LocalMallIcon />{" "}
+              <LocalMallIcon />{" "}
             </Badge>
             <ButtonGroup>
               <Button
@@ -312,7 +319,7 @@ export default function FullWidthGrid() {
           </div>
         </div>
             <button className={classes.bagButton}>Add to Bag</button>
-            <Paper className={classes.paper}><Product /></Paper>
+            <Paper className={classes.paper}><Product name={seasons[3]}/></Paper>
             <div className={classes.photoFooter}> We dare you not to fall in love with these fall favorites. Although paired perfectly with Pumpkin Spice Latte's, this capsule is anything but basic.</div>
             </Grid>
 
