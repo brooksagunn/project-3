@@ -7,10 +7,10 @@ export default function FormInput({ name, label, required }) {
     return (
         <Grid item xs={12} sm={6}>
             <Controller 
-                as={TextField}
                 control={control}
-                fullWidth
                 name={name}
+                as={<TextField InputProps={{ disableUnderline: true }} />}
+                fullWidth
                 label={label}
                 required={required}
             />

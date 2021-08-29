@@ -13,6 +13,11 @@ export default function AddressForm() {
                 <form onSubmit=''>
                     <Grid container spacing={3}>
                         <FormInput required name="firstName" label="First Name" />
+                        <FormInput required name="lastName" label="Last Name" />
+                        <FormInput required name="address" label="Address" />
+                        <FormInput required name="email" label="E-mail" />
+                        <FormInput required name="city" label="City" />
+                        <FormInput required name="zipcode" label="Zip Code" />
                     </Grid>
                 </form>
             </FormProvider>
