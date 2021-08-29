@@ -7,7 +7,9 @@ export default function Bag() {
     return (
         
         <div className="title">
-            <a href="/checkout"><button class="waves-effect waves-light btn"><i class="material-icons right"></i>Checkout</button></a>
+            <form action="/create-checkout-session" method="POST">
+                <button type="submit" class="waves-effect waves-light btn"><i class="material-icons right"></i>Checkout</button>
+            </form>
         </div>
 
         
