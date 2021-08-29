@@ -7,10 +7,10 @@
 }
 
 body {
-    height: 100vh;
-    background-image: url('../../assets/images/seasons2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100%;
+    /* background-image: url('../../assets/images/seasons2.jpg'); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 

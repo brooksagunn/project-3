@@ -32,6 +32,7 @@ export default function App() {
             </Route>
 
             <Route exact path="/products">
+              <Header />
               <ProductGrid />
             </Route>
 

@@ -42,23 +42,25 @@ const useStyles = makeStyles(() => ({
 }));
 
 
-export default function Product() {
+export default function Product(props) {
+    const product = props;
     const styles = useStyles();
+    
     return(
         <Card className={styles.card} >
             <CardMedia
                 className={styles.media}
                 image={seasons}
             />
-            <Box 
-                py={3} 
+            <Box
+                py={3}
                 px={2}
                 className={styles.content}
             >
                 <Info>
-                <InfoSubtitle>Capsule Uno</InfoSubtitle>
-                <InfoTitle>Winter 2021 Collection</InfoTitle>
-                <InfoCaption>Sleek wear for cold air</InfoCaption>
+                <InfoSubtitle>{product.name}</InfoSubtitle>
+                <InfoTitle>{product.category}</InfoTitle>
+                <InfoCaption>{product.description}</InfoCaption>
                 </Info>
             </Box>
         </Card>
