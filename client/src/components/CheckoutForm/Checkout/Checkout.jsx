@@ -8,7 +8,8 @@ const steps = ['Shipping Address', 'Payment Details'];
 
 export default function Checkout() {
     const [activeStep, setActiveStep] = useState(0);
-    const Form = () => activeStep === 0 ? <AddressForm /> : <PaymentForm />
+    const [shippingData, setShippingData] = useState({});
+    const Form = () => activeStep === 0 ? <AddressForm next={nextStep} /> : <PaymentForm />
     const Confirmation = () => (
         <div>
             Confirmation
