@@ -181,7 +181,14 @@ const useStyles = makeStyles((theme) => ({
 
 export default function FullWidthGrid() {
   const classes = useStyles();
-  const [itemCount, setItemCount] = React.useState(1);
+  const itemCounter = {
+    Spring: 0,
+    Winter: 0,
+    Fall: 0,
+    Summer: 0
+  }
+  const [itemCount, setItemCount] = React.useState(itemCounter);
+  
 
   return (
       
@@ -196,13 +203,13 @@ export default function FullWidthGrid() {
               <p className={classes.price}>$199</p>
                 <button className={classes.bagButton}>Add to Bag</button>
             <div className={classes.addBag1}>
-              <Badge color="secondary" badgeContent={itemCount}>
+              <Badge color="secondary" badgeContent={itemCount.Winter}>
                 <LocalMallIcon />{" "}
               </Badge>
                 <ButtonGroup>
                   <Button
                     onClick={() => {
-                      setItemCount(Math.max(itemCount - 1, 0));
+                      setItemCount({...itemCount, Winter: Math.max(itemCount.Winter - 1, 0)});
                     }}
                   >
                     {" "}
@@ -210,7 +217,7 @@ export default function FullWidthGrid() {
                   </Button>
                   <Button
                     onClick={() => {
-                      setItemCount(itemCount + 1);
+                      setItemCount({...itemCount, Winter: itemCount.Winter + 1});
                     }}
                   >
                     {" "}
@@ -230,13 +237,13 @@ export default function FullWidthGrid() {
             <button className={classes.bagButton}>Add to Bag</button>
             <div className={classes.addBag2}>
           <div>
-            <Badge color="secondary" badgeContent={itemCount}>
+            <Badge color="secondary" badgeContent={itemCount.Spring}>
             <LocalMallIcon />{" "}
             </Badge>
             <ButtonGroup>
               <Button
                 onClick={() => {
-                  setItemCount(Math.max(itemCount - 1, 0));
+                  setItemCount({...itemCount, Spring: Math.max(itemCount.Spring - 1, 0)});
                 }}
               >
                 {" "}
@@ -244,7 +251,7 @@ export default function FullWidthGrid() {
               </Button>
               <Button
                 onClick={() => {
-                  setItemCount(itemCount + 1);
+                  setItemCount({...itemCount, Spring: itemCount.Spring + 1});
                 }}
               >
                 {" "}
@@ -263,13 +270,13 @@ export default function FullWidthGrid() {
             <button className={classes.bagButton}>Add to Bag</button>
             <div className={classes.addBag3}>
           <div>
-            <Badge color="secondary" badgeContent={itemCount}>
+            <Badge color="secondary" badgeContent={itemCount.Summer}>
             <LocalMallIcon />{" "}
             </Badge>
             <ButtonGroup>
               <Button
                 onClick={() => {
-                  setItemCount(Math.max(itemCount - 1, 0));
+                  setItemCount({...itemCount, Summer: Math.max(itemCount.Summer - 1, 0)});
                 }}
               >
                 {" "}
@@ -277,7 +284,7 @@ export default function FullWidthGrid() {
               </Button>
               <Button
                 onClick={() => {
-                  setItemCount(itemCount + 1);
+                  setItemCount({...itemCount, Summer: itemCount.Summer + 1});
                 }}
               >
                 {" "}
@@ -295,13 +302,13 @@ export default function FullWidthGrid() {
             <p className={classes.price}>$179</p>
             <div className={classes.addBag4}>
           <div>
-            <Badge color="secondary" badgeContent={itemCount}>
+            <Badge color="secondary" badgeContent={itemCount.Fall}>
               <LocalMallIcon />{" "}
             </Badge>
             <ButtonGroup>
               <Button
                 onClick={() => {
-                  setItemCount(Math.max(itemCount - 1, 0));
+                  setItemCount({...itemCount, Fall: Math.max(itemCount.Fall - 1, 0)});
                 }}
               >
                 {" "}
@@ -309,7 +316,7 @@ export default function FullWidthGrid() {
               </Button>
               <Button
                 onClick={() => {
-                  setItemCount(itemCount + 1);
+                  setItemCount({...itemCount, Fall: itemCount.Fall + 1});
                 }}
               >
                 {" "}

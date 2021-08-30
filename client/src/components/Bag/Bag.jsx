@@ -5,10 +5,9 @@ import './Bag.css';
 export default function Bag() {
     return (
         
-        <div className="title">
-        <button className="waves-effect waves-light btn"><i className="material-icons right"></i>Add to Bag</button>
+        <div class="title">
+        <button class="waves-effect waves-light btn"><i class="material-icons right"></i>Checkout</button>
         </div>
 
-        
     );
 }
