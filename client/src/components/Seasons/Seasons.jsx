@@ -4,8 +4,6 @@ import Winter from '../../assets/images/winter-capsule.jpg';
 import Fall from '../../assets/images/fall-capsule.jpg';
 import Spring from '../../assets/images/spring-capsule.jpg';
 import Summer from '../../assets/images/summer-capsule.jpg';
-
-
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -192,7 +190,7 @@ export default function FullWidthGrid() {
 
   return (
       
-<div>     
+<div class='body'>     
     
         <section className={classes.gridContainer}>
             

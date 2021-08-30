@@ -12,7 +12,7 @@ export default function Nav() {
         
     <nav className="banner">
         <section className="mini-nav">
-            <p className="fallSale">Fall Sale starts 9/17! Free Shipping on Domestic Orders 0ver $100</p>
+            <p className="fallSale">Fall Sale starts 9/17! Free Shipping to US Customers, INTL coming soon</p>
         </section>
         <div className="navbar">
             <ul className="menu">

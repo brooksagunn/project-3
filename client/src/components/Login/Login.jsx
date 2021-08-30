@@ -6,7 +6,7 @@ export default function Login() {
     return (
         
   
-
+<div class= "login">
   <div class="row title">
 
   <form class="col s12">
@@ -36,6 +36,8 @@ export default function Login() {
       </div>
     </div>
   </form>
+</div>
+
 </div>
 
     );
