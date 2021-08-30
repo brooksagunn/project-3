@@ -12,6 +12,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../client/build')));
 
+app.use(require('./controllers'));
+
 // if (process.env.NODE_ENV === 'production') {
 //   app.use(express.static(path.join(__dirname, '../client/build')));
 // }
@@ -23,7 +25,7 @@ app.post('/create-checkout-session', async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     line_items: [
       {
-        
+        // TODO: replace this with the `price` of the product you want to sell
         price: 'price_1JTxF7BEhE86uu85Xe88HSi7',
         quantity: 1,
       },
