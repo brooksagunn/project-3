@@ -13,18 +13,29 @@ router.post('/', (req, res) => {
 });
 
 router.post('/login', async (req, res) => {
-    var username = req.body.username;
+    var email = req.body.email;
     var password = req.body.password;
 
-    db.User.findOne({username: username, password: password}, (err, user) => 
-    err 
-    ? res.status(500).send()
-    : !user 
-    ? res.status(404).send()
-    : res.status(200).send()
+    await db.User.findOne({
+        email: email,
+        password: password
+    }, 
+
+        (err, user) => {
+
+            if(err) {
+                res.status(500).send();
+            }
+
+            if(!user) {
+                res.status(404).send('Not Found');
+            }
+            
+            // req.session.user = user;
+            res.status(200).send();
+        }
+
     );
 });
-
-
 
 module.exports = router;

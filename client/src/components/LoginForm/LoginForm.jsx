@@ -10,7 +10,7 @@ export default function Login() {
   const loginHandler = (e) => {
     e.preventDefault();
 
-    axios.post('/login', async (req, res) => {
+    axios.post('/api/users/login', async (req, res) => {
         try {
           const userData = await User.findOne({ where: { username: req.body.username } });
       

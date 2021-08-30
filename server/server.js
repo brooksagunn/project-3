@@ -52,6 +52,7 @@ db.once('open', () => {
 
 const sess = {
   secret: 'Zucc is a lizard',
+  cookie: {},
   resave: false,
   saveUninitialized: true
 }
