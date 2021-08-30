@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
 
   grid: {
       position: 'relative',
-      height: '60vh',
+      height: '580px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'

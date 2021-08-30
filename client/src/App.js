@@ -10,8 +10,12 @@ import Checkout from './components/CheckoutForm/Checkout/Checkout'
 import ProductGrid from './components/ProductGrid/ProductGrid';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+
+
 export default function App() {
     return (
+     
+      
       <Router>
         <div>
           <Nav />
@@ -19,7 +23,7 @@ export default function App() {
 
             <Route exact path="/">
               <Header/>
-              <Paragraph />
+              <Paragraph />            
             </Route>
 
             <Route exact path="/seasons">
