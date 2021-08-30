@@ -31,6 +31,7 @@
     left: 0;
     position: absolute;
     height: var(--navbar-height);
+    font-weight: bold;
     justify-content: space-around;
     width: 100%;
     background-color: var(--nav-color);
@@ -64,7 +65,7 @@ nav ul li a {
 .left {
     float: left;
     position: relative;
-    height: 9vh;
+    height: 6.5vh;
     display: flex;
     justify-content: center;
     align-items: center;

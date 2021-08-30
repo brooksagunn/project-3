@@ -11,8 +11,8 @@ h3 {
     font-weight: bold;
     display: flex;
     position: absolute;  
-    top: 250px;
-    left: 80px;
+    top: 300px;
+    left: 100px;
 }
 
 .paragraph {
@@ -21,8 +21,8 @@ h3 {
     font-size: 30px;   
     display: flex; 
     position: absolute;
-    left: 80px;
-    top: 350px;
+    left: 100px;
+    top: 420px;
     width: 500px;
 }
 
