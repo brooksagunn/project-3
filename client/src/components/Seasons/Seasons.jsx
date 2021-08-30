@@ -192,6 +192,8 @@ export default function FullWidthGrid() {
     }else {
       currentOrder = [];
     }
+    console.log(type)
+    console.log(count)
     switch (type) {
       case 'winter':
         for(let i = 0; i < count; i++){
@@ -205,8 +207,9 @@ export default function FullWidthGrid() {
               }
          ) 
         }
+        break;
         case 'summer':
-          for(let i = 0; i < count; i++){
+          for(let j = 0; j < count; j++){
             currentOrder.push(
               {
                 name: "summer capsule",
@@ -217,21 +220,22 @@ export default function FullWidthGrid() {
               }
            ) 
           }
+          break;
           case 'fall': 
-          for(let i = 0; i < count; i++){
+          for(let k = 0; k < count; k++){
             currentOrder.push(
               {
                 name: "fall capsule",
                 description: "wear for the fall",
-                image: "https://www.wardrobeoxygen.com/wp-content/uploads/2018/03/capsule-wardrobe-for-working-from-home-or-for-stay-at-home-moms-500x635.jpg",
                 price: 189.99,
                 stock: 25,
                 category: "categories[2]._id",
               }
            ) 
           }
+          break;
           case 'spring':
-            for(let i = 0; i < count; i++){
+            for(let f = 0; f < count; f++){
               currentOrder.push(
                 {
                   name: "spring wear",
@@ -242,6 +246,7 @@ export default function FullWidthGrid() {
                 }
              ) 
             }
+            break;
     }
     localStorage.setItem("order", JSON.stringify(currentOrder));
   }
@@ -258,7 +263,7 @@ export default function FullWidthGrid() {
             <Grid className={classes.grid} item xs={3} sm={3}>
             <div className={classes.photoTitle}>winter</div>
               <p className={classes.price}>$199</p>
-                <button className={classes.bagButton} onClick={addTooBag(classes.photoTitle.value, winterCount)}>Add to Bag</button>
+                <button className={classes.bagButton, 'addButton'} onClick={addTooBag('winter', winterCount)}>Add to Bag</button>
             <div className={classes.addBag1}>
               <Badge color="secondary" badgeContent={winterCount}>
                 <LocalMallIcon />{" "}
@@ -293,7 +298,7 @@ export default function FullWidthGrid() {
             <Grid className={classes.grid} item xs={3} sm={3}>
             <div className={classes.photoTitle}>spring</div>
             <p className={classes.price}>$149</p>
-            <button className={classes.bagButton} >Add to Bag</button>
+            <button className={classes.bagButton, 'addButton'} onClick={addTooBag('spring', springCount)}>Add to Bag</button>
             <div className={classes.addBag2}>
           <div>
             <Badge color="secondary" badgeContent={springCount}>
@@ -328,7 +333,7 @@ export default function FullWidthGrid() {
             <Grid className={classes.grid} item xs={3} sm={3}>
             <div className={classes.photoTitle}>summer</div>
             <p className={classes.price}>$179</p>
-            <button className={classes.bagButton}>Add to Bag</button>
+            <button className={classes.bagButton , 'addButton'} onClick={addTooBag('summer', summerCount)}>Add to Bag</button>
             <div className={classes.addBag3}>
           <div>
             <Badge color="secondary" badgeContent={summerCount}>
@@ -390,7 +395,7 @@ export default function FullWidthGrid() {
             </ButtonGroup>
           </div>
         </div>
-            <button className={classes.bagButton}>Add to Bag</button>
+            <button className={classes.bagButton, 'addButton'} onClick={addTooBag('fall', fallCount)}>Add to Bag</button>
             <Paper className={classes.paper}><Product name={seasons[3]}/></Paper>
             <div className={classes.photoFooter}> We dare you not to fall in love with these fall favorites. Although paired perfectly with Pumpkin Spice Latte's, this capsule is anything but basic.</div>
             </Grid>
