@@ -1,0 +1,9 @@
+.grid-div {
+    position: relative;
+    margin-top: 300px;
+    width: 600px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}

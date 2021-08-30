@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.99a5743c.chunk.css",
+    "main.js": "/static/js/main.add80d5f.chunk.js",
+    "main.js.map": "/static/js/main.add80d5f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.02db76a7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.02db76a7.js.map",
+    "static/js/2.29b6c168.chunk.js": "/static/js/2.29b6c168.chunk.js",
+    "static/js/2.29b6c168.chunk.js.map": "/static/js/2.29b6c168.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.99a5743c.chunk.css.map": "/static/css/main.99a5743c.chunk.css.map",
+    "static/js/2.29b6c168.chunk.js.LICENSE.txt": "/static/js/2.29b6c168.chunk.js.LICENSE.txt",
+    "static/media/Header.css": "/static/media/capsule_wardrobe.ef03590d.png",
+    "static/media/Seasons.css": "/static/media/seasons.41e1ce9f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.02db76a7.js",
+    "static/js/2.29b6c168.chunk.js",
+    "static/css/main.99a5743c.chunk.css",
+    "static/js/main.add80d5f.chunk.js"
+  ]
+}

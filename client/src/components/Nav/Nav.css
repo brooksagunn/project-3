@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300&display=swap');
 
 :root {
-    --nav-color: rgba(255, 255, 255, .9);
+    --nav-color: rgb(255, 255, 255);
     --nav-font-size: calc(3px + 2vmin);
     --logo-font-size: calc(6px + 2vmin);
     --nav-box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
-    --navbar-height: 5vh;
+    --navbar-height: 6vh;
     --m-font: 'Alumni Sans';
 }
 
@@ -17,11 +17,20 @@
 }
 
 
+.fallSale {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    height: 30px;
+}
+
 .navbar {
-    top: 1;
+    top: 30px;
     left: 0;
-    position: fixed;
-    min-height: var(--navbar-height);
+    position: absolute;
+    height: var(--navbar-height);
     justify-content: space-around;
     width: 100%;
     background-color: var(--nav-color);
@@ -29,11 +38,12 @@
     flex-direction: row;
     align-items: center;
     box-shadow: var(--nav-box-shadow);
-    z-index: 1000;
+   
 }
 
 nav ul {
     display: flex;
+    position: relative;
     list-style-type: none;
     justify-content: space-around;
     flex-direction: row;
@@ -48,6 +58,18 @@ nav ul li {
 nav ul li a {
     color: black;
     text-decoration: none;
+    float: left;
+    position: relative;
+}
+
+.left {
+    float: left;
+    position: relative;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .logo-text {
@@ -56,6 +78,7 @@ nav ul li a {
     font-size: var(--logo-font-size);
     padding-left: 5px;
     color: black;
+    text-decoration: none;
 }
 
 .collapse {
@@ -71,11 +94,11 @@ nav ul li a {
 }
 
 .banner {
-    width: 100%;
-    top: 0;
-    color: rgb(248, 245, 245);
+    color: rgb(245, 245, 245);
     background-color:rgb(0, 0, 0);
-    position: relative;
+    position: fixed;
+    width: 100%;
+    height: 6vh;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -102,6 +125,7 @@ nav ul li a {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
