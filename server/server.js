@@ -18,8 +18,8 @@ app.use(require('./controllers'));
 //   app.use(express.static(path.join(__dirname, '../client/build')));
 // }
 
-const SUCCESS = 'http://localhost:3001/checkout';
-const CANCEL = 'http://localhost:3001/bag';
+const SUCCESS = 'https://encapsulate.herokuapp.com/checkout';
+const CANCEL = 'https://encapsulate.herokuapp.com/bag';
 
 app.post('/create-checkout-session', async (req, res) => {
   const session = await stripe.checkout.sessions.create({
