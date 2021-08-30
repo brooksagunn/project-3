@@ -1,26 +1,3 @@
-// import React from "react";
-// import './Accessories.css';
-
-// export default function Bag() {
-//     return (
-        
-//         // <div className="head">
-            
-//         //         <h1>Coming Soon!</h1>
-        
-//         // </div>
-
-
-
-
-
-
-
-
-//     );
-// }
-
-
 import React from 'react';
 import Converse from '../../assets/images/converse.jpg';
 import DrMartens from '../../assets/images/drmartens.jpg';
@@ -46,26 +23,20 @@ const accessories=[Converse, DrMartens, CarsCrocs, Toms]
 const useStyles = makeStyles((theme) => ({
   gridContainer: {
     display: 'flex',  
-    alignSelf: 'center',
     alignItems: 'center',
     position: 'relative',
     top: '230px',
-    margin: 0,
-    padding: 0,
   },
   
   paper: {
-    padding: theme.spacing(15),
+    paddingTop: '35px',
     display: 'flex',
-    top: '230px',
-    height: '60vh',
-    width: '88%',
+    height: '550px',
+    width: '400px',
     justifyContent: 'center',
-    alignItems: 'center',
-    alignSelf: 'center',
     color: '#fff',
     backgroundColor: '#1c1c1c',
-    opacity: '90%',
+    opacity: '98%',
     borderRadius: '10px',
   },
 
@@ -83,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#1c1c1c',
     position: 'fixed',
     display: 'flex',
-    top: '125px',
+    top: '135px',
     justifyContent: 'center',
     padding: '10px',
     borderRadius: '8px',
@@ -96,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '65px',
+    bottom: '115px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     color: '#fff',
@@ -107,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '18px',
+    bottom: '55px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '9.5px',
@@ -121,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#1c1c1c',
     position: 'fixed',
     display: 'flex',
-    bottom: '20px',
+    bottom: '30px',
     justifyContent: 'center',
     width: '300px',
     padding: '8px',
@@ -135,7 +106,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '20px',
+    bottom: '55px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '2px',
@@ -152,7 +123,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '20px',
+    bottom: '55px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '2px',
@@ -169,7 +140,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '20px',
+    bottom: '55px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '2px',
@@ -186,7 +157,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '20px',
+    bottom: '55px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '2px',
@@ -250,7 +221,7 @@ export default function FullWidthGrid() {
 
             <Paper className={classes.paper}><Product name={accessories[0]}/></Paper>
 
-            <div className={classes.photoFooter}> Designed for colder climates, this capsule includes the perfect winter wear that will also leave your wallet warm and fuzzy.</div>
+            <div className={classes.photoFooter}> The one, the only, the OG basketball kicks, Chuck Taylors. Wear these on a skateboard, for gym class, or while eating ramen. The all-around shoes.</div>
             </Grid>
 
             <Grid className={classes.grid} item xs={3} sm={3}>
@@ -283,7 +254,7 @@ export default function FullWidthGrid() {
           </div>
         </div>
             <Paper className={classes.paper}><Product name={accessories[1]}/></Paper>
-            <div className={classes.photoFooter}> Whether it's going to be a sunny or soaked season, hot or humid, our spring capsule will accompany you every step of the way.</div>
+            <div className={classes.photoFooter}> Whether you're headed to Swayze's or Barnes & Noble, these boots are perfect for anyone looking to make a statement. Also available in white.</div>
             </Grid>
 
             <Grid className={classes.grid} item xs={3} sm={3}>
@@ -316,7 +287,7 @@ export default function FullWidthGrid() {
           </div>
         </div>
             <Paper className={classes.paper}><Product name={accessories[2]}/></Paper>
-            <div className={classes.photoFooter}> No need to sweat your style this summer, this collection is sure to beat the heat and fashion police. Limited quantity, order now!</div>
+            <div className={classes.photoFooter}> "America is all about speed, hot nasty bad-ass speed" - Eleanor Roosevelt. Slip these bad boys on to kachow with the crew from Radiator Springs.</div>
             </Grid>
 
             <Grid className={classes.grid} item xs={3} sm={3}>
@@ -349,7 +320,7 @@ export default function FullWidthGrid() {
         </div>
             <button className={classes.bagButton}>Add to Bag</button>
             <Paper className={classes.paper}><Product name={accessories[3]}/></Paper>
-            <div className={classes.photoFooter}> We dare you not to fall in love with these fall favorites. Although paired perfectly with Pumpkin Spice Latte's, this capsule is anything but basic.</div>
+            <div className={classes.photoFooter}> Environmentally conscious, economically friendly, what's not to love? Tom's donates a pair of shoes for every pair bought, and we will too!</div>
             </Grid>
 
         </Grid>      

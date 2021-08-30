@@ -22,26 +22,20 @@ const seasons=[Winter, Fall, Spring, Summer]
 const useStyles = makeStyles((theme) => ({
   gridContainer: {
     display: 'flex',  
-    alignSelf: 'center',
     alignItems: 'center',
     position: 'relative',
     top: '230px',
-    margin: 0,
-    padding: 0,
   },
   
   paper: {
-    padding: theme.spacing(15),
+    paddingTop: '35px',
     display: 'flex',
-    top: '230px',
-    height: '60vh',
-    width: '88%',
+    height: '550px',
+    width: '400px',
     justifyContent: 'center',
-    alignItems: 'center',
-    alignSelf: 'center',
     color: '#fff',
     backgroundColor: '#1c1c1c',
-    opacity: '90%',
+    opacity: '98%',
     borderRadius: '10px',
   },
 
@@ -59,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#1c1c1c',
     position: 'fixed',
     display: 'flex',
-    top: '125px',
+    top: '135px',
     justifyContent: 'center',
     padding: '10px',
     borderRadius: '8px',
@@ -72,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '65px',
+    bottom: '115px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     color: '#fff',
@@ -83,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '18px',
+    bottom: '55px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '9.5px',
@@ -97,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#1c1c1c',
     position: 'fixed',
     display: 'flex',
-    bottom: '20px',
+    bottom: '30px',
     justifyContent: 'center',
     width: '300px',
     padding: '8px',
@@ -111,7 +105,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '20px',
+    bottom: '55px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '2px',
@@ -128,7 +122,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '20px',
+    bottom: '55px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '2px',
@@ -145,7 +139,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '20px',
+    bottom: '55px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '2px',
@@ -162,7 +156,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '20px',
+    bottom: '55px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '2px',
@@ -197,7 +191,7 @@ export default function FullWidthGrid() {
         <Grid container spacing={0}>
 
             <Grid className={classes.grid} item xs={3} sm={3}>
-            <div className={classes.photoTitle}>winter</div>
+            <div className={classes.photoTitle}>Winter</div>
               <p className={classes.price}>$199</p>
                 <button className={classes.bagButton}>Add to Bag</button>
             <div className={classes.addBag1}>
@@ -230,7 +224,7 @@ export default function FullWidthGrid() {
             </Grid>
 
             <Grid className={classes.grid} item xs={3} sm={3}>
-            <div className={classes.photoTitle}>spring</div>
+            <div className={classes.photoTitle}>Spring</div>
             <p className={classes.price}>$149</p>
             <button className={classes.bagButton}>Add to Bag</button>
             <div className={classes.addBag2}>
@@ -263,7 +257,7 @@ export default function FullWidthGrid() {
             </Grid>
 
             <Grid className={classes.grid} item xs={3} sm={3}>
-            <div className={classes.photoTitle}>summer</div>
+            <div className={classes.photoTitle}>Summer</div>
             <p className={classes.price}>$179</p>
             <button className={classes.bagButton}>Add to Bag</button>
             <div className={classes.addBag3}>
@@ -296,7 +290,7 @@ export default function FullWidthGrid() {
             </Grid>
 
             <Grid className={classes.grid} item xs={3} sm={3}>
-            <div className={classes.photoTitle}>fall</div>
+            <div className={classes.photoTitle}>Fall</div>
             <p className={classes.price}>$179</p>
             <div className={classes.addBag4}>
           <div>

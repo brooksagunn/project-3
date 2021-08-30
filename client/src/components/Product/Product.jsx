@@ -10,20 +10,20 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
     card: {
-      borderRadius: '1rem',
+      borderRadius: '10px',
       boxShadow: 'none',
       position: 'relative',
-      width: 200,
+      width: 300,
       height: 360,
       '&:after': {
         content: '""',
         display: 'block',
         position: 'absolute',
         width: '100%',
-        height: '64%',
+        height: '33%',
         bottom: 0,
         zIndex: 0,
-        background: 'linear-gradient(to top, #000, rgba(0,0,0,0))',
+        background: 'linear-gradient(to top, rgba(228, 227, 201, 0.28), rgba(0,0,0,0))',
       },
     },
     content: {
