@@ -1,3 +1,10 @@
-const Auth = (req, res, next) => !req.session.logged_in ? res.redirect('/login') : next();
-// exported
-module.exports = Auth;
+const router = require('express').Router();
+
+const {
+    signUp,
+    login
+} = require('../controllers/authController');
+
+router.route("/login").post(signUp);
+
+module.exports = router;

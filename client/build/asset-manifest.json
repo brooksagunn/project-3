@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a354ea8.chunk.css",
-    "main.js": "/static/js/main.90876b5b.chunk.js",
-    "main.js.map": "/static/js/main.90876b5b.chunk.js.map",
+    "main.css": "/static/css/main.565ae45e.chunk.css",
+    "main.js": "/static/js/main.8e6ec65b.chunk.js",
+    "main.js.map": "/static/js/main.8e6ec65b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.02db76a7.js",
     "runtime-main.js.map": "/static/js/runtime-main.02db76a7.js.map",
-    "static/js/2.ee071173.chunk.js": "/static/js/2.ee071173.chunk.js",
-    "static/js/2.ee071173.chunk.js.map": "/static/js/2.ee071173.chunk.js.map",
+    "static/js/2.49d4091f.chunk.js": "/static/js/2.49d4091f.chunk.js",
+    "static/js/2.49d4091f.chunk.js.map": "/static/js/2.49d4091f.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.2a354ea8.chunk.css.map": "/static/css/main.2a354ea8.chunk.css.map",
-    "static/js/2.ee071173.chunk.js.LICENSE.txt": "/static/js/2.ee071173.chunk.js.LICENSE.txt",
+    "static/css/main.565ae45e.chunk.css.map": "/static/css/main.565ae45e.chunk.css.map",
+    "static/js/2.49d4091f.chunk.js.LICENSE.txt": "/static/js/2.49d4091f.chunk.js.LICENSE.txt",
     "static/media/Header.css": "/static/media/capsule_wardrobe.ef03590d.png",
     "static/media/fall-capsule.7ceff239.jpg": "/static/media/fall-capsule.7ceff239.jpg",
     "static/media/Seasons.css": "/static/media/seasons2.3330d038.jpg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.02db76a7.js",
-    "static/js/2.ee071173.chunk.js",
-    "static/css/main.2a354ea8.chunk.css",
-    "static/js/main.90876b5b.chunk.js"
+    "static/js/2.49d4091f.chunk.js",
+    "static/css/main.565ae45e.chunk.css",
+    "static/js/main.8e6ec65b.chunk.js"
   ]
 }
