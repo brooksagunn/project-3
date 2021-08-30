@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const mongoose = require('mongoose');
 
 const db = require('./config/connection');
 const stripe = require('stripe')('sk_test_51JTd9YBEhE86uu85pavuv4kUhMJMDeUm2qplR7szeG9wCfc8P54BMv5UMUsMwlg0uCZRU9ljBR53ovEzjFd6t6sd00YG4y4EzV');

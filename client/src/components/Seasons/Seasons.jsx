@@ -192,8 +192,6 @@ export default function FullWidthGrid() {
     }else {
       currentOrder = [];
     }
-    console.log(type)
-    console.log(count)
     switch (type) {
       case 'winter':
         for(let i = 0; i < count; i++){

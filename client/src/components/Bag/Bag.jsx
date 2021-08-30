@@ -2,7 +2,6 @@ import React from 'react';
 import './Bag.css';
 let currentOrder
 JSON.parse(localStorage.getItem("order")) ? currentOrder = JSON.parse(localStorage.getItem("order")) : currentOrder = [];
-console.log(currentOrder)
 export default function Bag() {
     return (
         
