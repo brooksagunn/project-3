@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Nav from './components/Nav/Nav';
 import Login from './components/Login/Login';
+import Accessories from './components/Accessories/Accessories'
 import Bag from './components/Bag/Bag';
 import Header from './components/Header/Header';
 import Seasons from './components/Seasons/Seasons';
@@ -36,8 +37,13 @@ export default function App() {
             <Route exact path="/checkout">
               <Checkout />
             </Route>
+
             <Route exact path="/products">
               <ProductGrid />
+            </Route>
+
+            <Route exact path="/accessories">
+              <Accessories />
             </Route>
 
           </Switch>
