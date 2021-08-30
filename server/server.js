@@ -23,7 +23,7 @@ app.post('/create-checkout-session', async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     line_items: [
       {
-        // TODO: replace this with the `price` of the product you want to sell
+        
         price: 'price_1JTxF7BEhE86uu85Xe88HSi7',
         quantity: 1,
       },

@@ -1,14 +1,13 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import seasons from '../../assets/images/winter_girl.jpg';
 import './Product.css';
-
 import Box from '@material-ui/core/Box';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import { Info, InfoCaption, InfoSubtitle, InfoTitle } from '@mui-treasury/components/info';
-
 import { makeStyles } from '@material-ui/core/styles';
+
+
 
 const useStyles = makeStyles(() => ({
     card: {
@@ -42,13 +41,13 @@ const useStyles = makeStyles(() => ({
 }));
 
 
-export default function Product() {
+export default function Product(props) {
     const styles = useStyles();
     return(
         <Card className={styles.card} >
             <CardMedia
                 className={styles.media}
-                image={seasons}
+                image={props.name}
             />
             <Box 
                 py={3} 

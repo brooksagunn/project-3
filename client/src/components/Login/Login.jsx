@@ -28,7 +28,7 @@ export default function Login() {
     return (
         
   
-
+<div class= "login">
   <div class="row title">
 
   <form class="col s12" onSubmit={signUpHandler}>
@@ -84,6 +84,8 @@ export default function Login() {
         <button class="waves-effect waves-light btn"><i class="material-icons right"></i>Log In</button>
     </div>
   </form>
+</div>
+
 </div>
 
     );
