@@ -2,10 +2,16 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 const bcrypt = require("bcrypt");
-const Order = require("./Order");
+// const Order = require("./Order");
 
 const Users = new Schema({
-  username: {
+  firstName: {
+    type: String,
+    required: true,
+    trim: true,
+    unique: true,
+  },
+  lastName: {
     type: String,
     required: true,
     trim: true,
@@ -21,8 +27,7 @@ const Users = new Schema({
     type: String,
     required: true,
     minlength: 8,
-  },
-  orders: [Order.schema],
+  }
 });
 
 Users.pre("save", async function (next) {
