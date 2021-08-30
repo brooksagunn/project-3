@@ -12,4 +12,19 @@ router.post('/', (req, res) => {
         });
 });
 
+router.post('/login', async (req, res) => {
+    var username = req.body.username;
+    var password = req.body.password;
+
+    db.User.findOne({username: username, password: password}, (err, user) => 
+    err 
+    ? res.status(500).send()
+    : !user 
+    ? res.status(404).send()
+    : res.status(200).send()
+    );
+});
+
+
+
 module.exports = router;
