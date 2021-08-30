@@ -25,7 +25,7 @@ app.post('/create-checkout-session', async (req, res) => {
     line_items: [
       {
         // TODO: replace this with the `price` of the product you want to sell
-        price: 'price_1JTxF7BEhE86uu85Xe88HSi7',
+        price: 'price_1JUKMhBEhE86uu85pAxymOuc',
         quantity: 1,
       },
     ],
