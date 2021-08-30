@@ -1,6 +1,14 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const db = require('../../models');
 
-router.post('/')
+router.post('/', (req, res) => {
+    db.User.create({})
+        .then(response => {
+            res.status(200).json(response);
+        })
+        .catch(err => {
+            res.status(500).json(err);
+        });
+});
 
 module.exports = router;

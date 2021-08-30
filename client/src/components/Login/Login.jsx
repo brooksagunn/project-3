@@ -14,7 +14,7 @@ export default function Login() {
   const signUpHandler = (e) => {
     e.preventDefault();
 
-    axios.post("/api/login", {
+    axios.post("/api/users", {
       firstName: firstName,
       lastName: lastName,
       email: email,
