@@ -183,15 +183,73 @@ export default function FullWidthGrid() {
    const [ winterCount, setWinterCount ] = useState(0);
    const [ fallCount, setFallCount ] = useState(0);
    const [ summerCount, setSummerCount ] = useState(0);
-  }
+  
   
   const addTooBag = (type, count) => {
-
+    let currentOrder
+    if(localStorage.getItem('order')){
+      currentOrder = JSON.parse(localStorage.getItem('order'))
+    }else {
+      currentOrder = [];
+    }
+    switch (type) {
+      case 'winter':
+        for(let i = 0; i < count; i++){
+          currentOrder.push(
+              {
+                name: "winter capsule",
+                description: "wear for the winter",
+                price: 199.99,
+                stock: 30,
+                category: "categories[0]._id",
+              }
+         ) 
+        }
+        case 'summer':
+          for(let i = 0; i < count; i++){
+            currentOrder.push(
+              {
+                name: "summer capsule",
+                description: "wear for the summer",
+                price: 189.99,
+                stock: 37,
+                category: "categories[1]._id",
+              }
+           ) 
+          }
+          case 'fall': 
+          for(let i = 0; i < count; i++){
+            currentOrder.push(
+              {
+                name: "fall capsule",
+                description: "wear for the fall",
+                image: "https://www.wardrobeoxygen.com/wp-content/uploads/2018/03/capsule-wardrobe-for-working-from-home-or-for-stay-at-home-moms-500x635.jpg",
+                price: 189.99,
+                stock: 25,
+                category: "categories[2]._id",
+              }
+           ) 
+          }
+          case 'spring':
+            for(let i = 0; i < count; i++){
+              currentOrder.push(
+                {
+                  name: "spring wear",
+                  description: "wear for the spring",
+                  price: 19.99,
+                  stock: 3,
+                  category: "categories[3]._id",
+                }
+             ) 
+            }
+    }
+    localStorage.setItem("order", JSON.stringify(currentOrder));
   }
+  
 
   return (
       
-<div class='body'>     
+<div className='body'>     
     
         <section className={classes.gridContainer}>
             
@@ -200,15 +258,17 @@ export default function FullWidthGrid() {
             <Grid className={classes.grid} item xs={3} sm={3}>
             <div className={classes.photoTitle}>winter</div>
               <p className={classes.price}>$199</p>
-                <button className={classes.bagButton} onClick={addTooBag}>Add to Bag</button>
+                <button className={classes.bagButton} onClick={addTooBag(classes.photoTitle.value, winterCount)}>Add to Bag</button>
             <div className={classes.addBag1}>
-              <Badge color="secondary" badgeContent={itemCount.Winter}>
+              <Badge color="secondary" badgeContent={winterCount}>
                 <LocalMallIcon />{" "}
               </Badge>
                 <ButtonGroup>
                   <Button
                     onClick={() => {
+                      if (winterCount > 0){
                       setWinterCount(winterCount - 1);
+                      }
                     }}
                   >
                     {" "}
@@ -233,16 +293,18 @@ export default function FullWidthGrid() {
             <Grid className={classes.grid} item xs={3} sm={3}>
             <div className={classes.photoTitle}>spring</div>
             <p className={classes.price}>$149</p>
-            <button className={classes.bagButton} onClick={}>Add to Bag</button>
+            <button className={classes.bagButton} >Add to Bag</button>
             <div className={classes.addBag2}>
           <div>
-            <Badge color="secondary" badgeContent={itemCount.Spring}>
+            <Badge color="secondary" badgeContent={springCount}>
             <LocalMallIcon />{" "}
             </Badge>
             <ButtonGroup>
               <Button
                 onClick={() => {
+                  if (springCount > 0) {
                   setSpringCount(springCount - 1);
+                  }
                 }}
               >
                 {" "}
@@ -269,13 +331,15 @@ export default function FullWidthGrid() {
             <button className={classes.bagButton}>Add to Bag</button>
             <div className={classes.addBag3}>
           <div>
-            <Badge color="secondary" badgeContent={itemCount.Summer}>
+            <Badge color="secondary" badgeContent={summerCount}>
             <LocalMallIcon />{" "}
             </Badge>
             <ButtonGroup>
               <Button
                 onClick={() => {
+                  if (summerCount > 0){
                   setSummerCount(summerCount - 1);
+                  }
                 }}
               >
                 {" "}
@@ -301,13 +365,15 @@ export default function FullWidthGrid() {
             <p className={classes.price}>$179</p>
             <div className={classes.addBag4}>
           <div>
-            <Badge color="secondary" badgeContent={itemCount.Fall}>
+            <Badge color="secondary" badgeContent={fallCount}>
               <LocalMallIcon />{" "}
             </Badge>
             <ButtonGroup>
               <Button
                 onClick={() => {
+                  if (fallCount > 0){
                   setFallCount(fallCount - 1);
+                  }
                 }}
               >
                 {" "}
@@ -334,5 +400,5 @@ export default function FullWidthGrid() {
         </section>
 </div>
   );
-
+              }
 
