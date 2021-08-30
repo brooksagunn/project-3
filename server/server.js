@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const mongoose = require('mongoose');
 
 const db = require('./config/connection');
 const stripe = require('stripe')('sk_test_51JTd9YBEhE86uu85pavuv4kUhMJMDeUm2qplR7szeG9wCfc8P54BMv5UMUsMwlg0uCZRU9ljBR53ovEzjFd6t6sd00YG4y4EzV');
@@ -17,7 +18,6 @@ app.use(express.static(path.join(__dirname, '../client/build')));
 
 const SUCCESS = 'http://localhost:3001/checkout';
 const CANCEL = 'http://localhost:3001/bag';
-
 
 app.post('/create-checkout-session', async (req, res) => {
   const session = await stripe.checkout.sessions.create({
@@ -40,6 +40,13 @@ app.post('/create-checkout-session', async (req, res) => {
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/encapsulate", {
+  useNewUrlParser: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true,
+  useFindAndModify: false
 });
 
 db.once('open', () => {
