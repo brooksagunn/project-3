@@ -21,6 +21,7 @@ db.once("open", async () => {
         name: "fall",
       },
     ]);
+
     const products = await Product.create([
       {
         name: "summer wear",
@@ -51,6 +52,7 @@ db.once("open", async () => {
         category: categories[3]._id,
       }
     ]);
+
     const users = await User.insertMany([
       {
         username: "bobbington",
@@ -83,7 +85,9 @@ db.once("open", async () => {
         ],
       },
     ]);
+
     console.log("all done!");
+    
     process.exit(0);
   } catch (err) {
     throw err;

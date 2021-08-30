@@ -13,31 +13,34 @@ export default function App() {
     return (
       <Router>
         <div>
-          <Nav />
           <Switch>
 
             <Route exact path="/">
+              <Nav />
               <Header/>
               <Paragraph />
             </Route>
 
             <Route exact path="/seasons">
+              <Nav />
               <Seasons />
             </Route>
 
             <Route exact path="/bag">
+              <Nav />
               <Bag />
             </Route>
 
             <Route exact path="/login">
+              <Nav />
               <Login />
             </Route>
 
             <Route exact path="/checkout">
+              <Nav />
               <Checkout />
             </Route>
             <Route exact path="/products">
-              <Header />
               <ProductGrid />
             </Route>
 

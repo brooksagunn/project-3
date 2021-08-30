@@ -17,6 +17,7 @@ const useStyles = makeStyles(() => ({
       position: 'relative',
       width: 200,
       height: 360,
+      margin: '20px',
       '&:after': {
         content: '""',
         display: 'block',

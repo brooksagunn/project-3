@@ -8,34 +8,36 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
   gridContainer: {
-    display: 'flex',  
-    alignSelf: 'center',
-    alignItems: 'center',
-    position: 'relative',
-    top: '230px',
-    margin: 0,
-    padding: 0,
+  //   display: 'flex',  
+  //   // alignSelf: 'center',
+  //   // alignItems: 'center',
+  //   position: 'relative',
+  //   // top: '230px',
+  marginTop: 'auto',
+  //   // padding: 0,
   },
   
   paper: {
     padding: theme.spacing(15),
     display: 'flex',
-    top: '250px',
+    // top: '250px',
     height: '60vh',
     width: '88%',
     justifyContent: 'center',
     alignItems: 'center',
-    alignSelf: 'center',
+    // alignSelf: 'center',
     color: '#fff',
     backgroundColor: '#1c1c1c',
     opacity: '90%',
     borderRadius: '10px',
+    margin: '10px'
   },
 
   grid: {
       position: 'relative',
-      height: '45vh',
+      height: '100%',
       display: 'flex',
+      flexDirection: 'column', 
       justifyContent: 'center',
       alignItems: 'center'
   },
@@ -44,9 +46,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fff',
     opacity: '85%',
     color: '#1c1c1c',
-    position: 'fixed',
+    // position: 'fixed',
     display: 'flex',
-    top: '100px',
+    // top: '100px',
     justifyContent: 'center',
     padding: '8px',
     borderRadius: '8px',
@@ -59,9 +61,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fff',
     opacity: '85%',
     color: '#1c1c1c',
-    position: 'fixed',
+    // position: 'fixed',
     display: 'flex',
-    bottom: '15px',
+    // bottom: '15px',
     justifyContent: 'center',
     width: '250px',
     padding: '8px',
@@ -80,7 +82,7 @@ export default function FullWidthGrid() {
       
 <div>     
     
-        <section className={classes.gridContainer}>
+        {/* <section className={classes.gridContainer}> */}
             
         <Grid container spacing={0}>
 
@@ -109,7 +111,7 @@ export default function FullWidthGrid() {
             </Grid>
 
         </Grid>
-        </section>
+        {/* </section> */}
 </div>
   );
 }

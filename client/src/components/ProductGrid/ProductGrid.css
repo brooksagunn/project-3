@@ -11,23 +11,32 @@
 
 main {
     grid-area: main;
-    height: 100%;
-    background-color: red;
+    /* background-color: red; */
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0 20px 0;
     align-items: center;
 }
 
 .row.center {
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 footer {
     grid-area: footer;
-    background-color: orange;
-    color: white;
+    background-color: rgb(245, 245, 245);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
