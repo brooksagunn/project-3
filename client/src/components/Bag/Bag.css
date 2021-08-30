@@ -1,14 +1,9 @@
-
-
-
 .title {
     color: black;
     position: relative;
     display: flex;
     justify-content: center;
     text-align: center;
-<<<<<<< HEAD
-=======
     align-items: center;
     top: 600px;
 }
@@ -24,5 +19,4 @@
     width: 130px;
     font-size: 16px;
     border-radius: 8px;
->>>>>>> ceb26d6bcd696450ff5cf13dc788b213b3873fcb
 }

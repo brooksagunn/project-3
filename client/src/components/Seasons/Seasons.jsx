@@ -33,11 +33,8 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(15),
     display: 'flex',
-<<<<<<< HEAD
     // top: '250px',
-=======
     top: '230px',
->>>>>>> ceb26d6bcd696450ff5cf13dc788b213b3873fcb
     height: '60vh',
     width: '88%',
     justifyContent: 'center',
@@ -52,11 +49,7 @@ const useStyles = makeStyles((theme) => ({
 
   grid: {
       position: 'relative',
-<<<<<<< HEAD
-      height: '100%',
-=======
       height: '60vh',
->>>>>>> ceb26d6bcd696450ff5cf13dc788b213b3873fcb
       display: 'flex',
       flexDirection: 'column', 
       justifyContent: 'center',
@@ -69,11 +62,8 @@ const useStyles = makeStyles((theme) => ({
     color: '#1c1c1c',
     // position: 'fixed',
     display: 'flex',
-<<<<<<< HEAD
     // top: '100px',
-=======
     top: '125px',
->>>>>>> ceb26d6bcd696450ff5cf13dc788b213b3873fcb
     justifyContent: 'center',
     padding: '10px',
     borderRadius: '8px',
@@ -111,11 +101,8 @@ const useStyles = makeStyles((theme) => ({
     color: '#1c1c1c',
     // position: 'fixed',
     display: 'flex',
-<<<<<<< HEAD
     // bottom: '15px',
-=======
     bottom: '20px',
->>>>>>> ceb26d6bcd696450ff5cf13dc788b213b3873fcb
     justifyContent: 'center',
     width: '300px',
     padding: '8px',
@@ -346,14 +333,8 @@ export default function FullWidthGrid() {
             <div className={classes.photoFooter}> We dare you not to fall in love with these fall favorites. Although paired perfectly with Pumpkin Spice Latte's, this capsule is anything but basic.</div>
             </Grid>
 
-<<<<<<< HEAD
         </Grid>
         {/* </section> */}
-=======
-        </Grid>      
-
-        </section>
->>>>>>> ceb26d6bcd696450ff5cf13dc788b213b3873fcb
 </div>
   );
 }

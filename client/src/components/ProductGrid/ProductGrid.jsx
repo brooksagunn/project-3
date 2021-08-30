@@ -2,7 +2,8 @@ import Product from "../Product/Product"
 import Bag from "../Bag/Bag"
 import Seasons from "../Seasons/Seasons" 
 import Header from '../Header/Header'
-import Nav from '../Nav/Nav' 
+import Nav from '../Nav/Nav'
+import Login from "../Login/Login" 
 import './ProductGrid.css'
 
 export default function ProductGrid() {
@@ -11,7 +12,7 @@ export default function ProductGrid() {
             <Nav />
             <main>
                 <div className='row center'>
-                    <Seasons />
+                    <Login />
                 </div>
             </main>
             <footer>

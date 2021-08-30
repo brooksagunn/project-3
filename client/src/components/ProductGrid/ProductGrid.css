@@ -19,7 +19,7 @@ main {
     justify-content: center;
 }
 
-.row {
+.p-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -28,7 +28,7 @@ main {
     align-items: center;
 }
 
-.row.center {
+.p-row.center {
     justify-content: center;
 }
 

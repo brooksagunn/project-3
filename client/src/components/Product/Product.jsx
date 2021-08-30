@@ -41,12 +41,8 @@ const useStyles = makeStyles(() => ({
     }
 }));
 
-
 export default function Product(props) {
-<<<<<<< HEAD
     const product = props;
-=======
->>>>>>> ceb26d6bcd696450ff5cf13dc788b213b3873fcb
     const styles = useStyles();
     
     return(
