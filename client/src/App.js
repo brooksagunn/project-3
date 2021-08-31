@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Nav from './components/Nav/Nav';
 import Login from './components/Login/Login';
+import LoginForm from './components/LoginForm/LoginForm'
 import Bag from './components/Bag/Bag';
 import Header from './components/Header/Header';
 import Seasons from './components/Seasons/Seasons';
@@ -13,27 +14,35 @@ export default function App() {
     return (
       <Router>
         <div>
-          <Nav />
           <Switch>
 
             <Route exact path="/">
+              <Nav />
               <Header/>
               <Paragraph />
             </Route>
 
             <Route exact path="/seasons">
+              <Nav />
               <Seasons />
             </Route>
 
             <Route exact path="/bag">
+              <Nav />
               <Bag />
             </Route>
 
             <Route exact path="/login">
+              <Nav />
               <Login />
             </Route>
 
+            <Route exact path="/log">
+              <LoginForm />
+            </Route>
+            
             <Route exact path="/checkout">
+              <Nav />
               <Checkout />
             </Route>
             <Route exact path="/products">
