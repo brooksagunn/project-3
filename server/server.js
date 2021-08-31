@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
-var session = require('express-session');
 
 const db = require('./config/connection');
 const stripe = require('stripe')('sk_test_51JTd9YBEhE86uu85pavuv4kUhMJMDeUm2qplR7szeG9wCfc8P54BMv5UMUsMwlg0uCZRU9ljBR53ovEzjFd6t6sd00YG4y4EzV');
@@ -26,6 +25,7 @@ app.post('/create-checkout-session', async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     line_items: [
       {
+        // TODO: replace this with the `price` of the product you want to sell
         price: 'price_1JTxF7BEhE86uu85Xe88HSi7',
         quantity: 1,
       },
@@ -49,12 +49,3 @@ db.once('open', () => {
     console.log(`API server running on port ${PORT}!`);
   });
 });
-
-const sess = {
-  secret: 'Zucc is a lizard',
-  cookie: {},
-  resave: false,
-  saveUninitialized: true
-}
-
-app.use(session(sess));
