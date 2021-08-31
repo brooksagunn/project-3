@@ -105,24 +105,24 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '55px',
+    bottom: '50px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
-    padding: '2px',
+    padding: '4px',
     textAlign: 'center',
     alignContent: 'center',
     borderRadius: '8px',
     backgroundColor: '#fff',
     width: '128px',
     height: '36px',
-    left: '60px'
+    left: '175px'
   },
 
   addBag2: {
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '55px',
+    bottom: '50px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '2px',
@@ -132,14 +132,14 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fff',
     width: '128px',
     height: '36px',
-    left: '60px'
+    left: '175px'
   },
 
   addBag3: {
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '55px',
+    bottom: '50px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '2px',
@@ -149,14 +149,14 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fff',
     width: '128px',
     height: '36px',
-    left: '60px'
+    left: '175px'
   },
 
   addBag4: {
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '55px',
+    bottom: '50px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '2px',
@@ -166,7 +166,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fff',
     width: '128px',
     height: '36px',
-    left: '60px'
+    left: '175px'
   },
 
 }));

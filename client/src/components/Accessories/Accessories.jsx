@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '55px',
+    bottom: '45px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '9.5px',
@@ -106,24 +106,24 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '55px',
+    bottom: '50px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
-    padding: '2px',
+    padding: '4px',
     textAlign: 'center',
     alignContent: 'center',
     borderRadius: '8px',
     backgroundColor: '#fff',
     width: '128px',
     height: '36px',
-    left: '60px'
+    left: '175px'
   },
 
   addBag2: {
-    position: 'absolute',
+   position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '55px',
+    bottom: '50px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '2px',
@@ -133,14 +133,14 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fff',
     width: '128px',
     height: '36px',
-    left: '60px'
+    left: '175px'
   },
 
   addBag3: {
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '55px',
+    bottom: '50px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '2px',
@@ -150,14 +150,14 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fff',
     width: '128px',
     height: '36px',
-    left: '60px'
+    left: '175px'
   },
 
   addBag4: {
     position: 'absolute',
     zIndex: 500,
     display: 'flex',
-    bottom: '55px',
+    bottom: '50px',
     fontFamily: 'Raleway',
     fontWeight: 'bold',
     padding: '2px',
@@ -167,7 +167,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fff',
     width: '128px',
     height: '36px',
-    left: '60px'
+    left: '175px'
   },
 
 }));
@@ -194,7 +194,6 @@ export default function FullWidthGrid() {
             <Grid className={classes.grid} item xs={3} sm={3}>
             <div className={classes.photoTitle}>Converse</div>
               <p className={classes.price}>$59</p>
-                <button className={classes.bagButton}>Add to Bag</button>
             <div className={classes.addBag1}>
               <Badge color="secondary" badgeContent={itemCount.Converse}>
                 <LocalMallIcon />{" "}
@@ -227,7 +226,6 @@ export default function FullWidthGrid() {
             <Grid className={classes.grid} item xs={3} sm={3}>
             <div className={classes.photoTitle}>Dr Martens</div>
             <p className={classes.price}>$139</p>
-            <button className={classes.bagButton}>Add to Bag</button>
             <div className={classes.addBag2}>
           <div>
             <Badge color="secondary" badgeContent={itemCount.DrMartens}>
@@ -260,7 +258,6 @@ export default function FullWidthGrid() {
             <Grid className={classes.grid} item xs={3} sm={3}>
             <div className={classes.photoTitle}>Cars Crocs</div>
             <p className={classes.price}>$69</p>
-            <button className={classes.bagButton}>Add to Bag</button>
             <div className={classes.addBag3}>
           <div>
             <Badge color="secondary" badgeContent={itemCount.CarsCrocs}>
@@ -318,7 +315,6 @@ export default function FullWidthGrid() {
             </ButtonGroup>
           </div>
         </div>
-            <button className={classes.bagButton}>Add to Bag</button>
             <Paper className={classes.paper}><Product name={accessories[3]}/></Paper>
             <div className={classes.photoFooter}> Environmentally conscious, economically friendly, what's not to love? Tom's donates a pair of shoes for every pair bought, and we will too!</div>
             </Grid>
