@@ -14,6 +14,7 @@ const useStyles = makeStyles(() => ({
       position: 'relative',
       width: 300,
       height: 360,
+      margin: '20px',
       '&:after': {
         content: '""',
         display: 'block',
@@ -38,18 +39,18 @@ const useStyles = makeStyles(() => ({
     }
 }));
 
-
-
 export default function Product(props) {
+    const product = props;
     const styles = useStyles();
+    
     return(
         <Card className={styles.card} >
             <CardMedia
                 className={styles.media}
                 image={props.name}
             />
-            <Box 
-                py={3} 
+            <Box
+                py={3}
                 px={2}
                 className={styles.content}
             >

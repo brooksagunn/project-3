@@ -39,7 +39,6 @@
     flex-direction: row;
     align-items: center;
     box-shadow: var(--nav-box-shadow);
-   
 }
 
 nav ul {
@@ -104,6 +103,7 @@ nav ul li a {
     text-align: center;
     align-items: center;
     font-family: var(--m-font);
+    grid-area: navbar;
 }
 
 @media screen and (max-width: 1180px) {

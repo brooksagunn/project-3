@@ -37,12 +37,14 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#1c1c1c',
     opacity: '98%',
     borderRadius: '10px',
+    margin: '10px'
   },
 
   grid: {
       position: 'relative',
       height: '580px',
       display: 'flex',
+      flexDirection: 'column', 
       justifyContent: 'center',
       alignItems: 'center'
   },
@@ -51,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fff',
     opacity: '85%',
     color: '#1c1c1c',
-    position: 'fixed',
+    // position: 'fixed',
     display: 'flex',
     top: '135px',
     justifyContent: 'center',
@@ -89,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#fff',
     opacity: '85%',
     color: '#1c1c1c',
-    position: 'fixed',
+    // position: 'fixed',
     display: 'flex',
     bottom: '30px',
     justifyContent: 'center',
@@ -241,6 +243,7 @@ export default function FullWidthGrid() {
              ) 
             }
             break;
+          default: console.log('hewwo UwU');
     }
     localStorage.setItem("order", JSON.stringify(currentOrder));
   }
@@ -250,7 +253,7 @@ export default function FullWidthGrid() {
       
 <div className='body'>     
     
-        <section className={classes.gridContainer}>
+        {/* <section className={classes.gridContainer}> */}
             
         <Grid container spacing={0}>
 
@@ -394,9 +397,8 @@ export default function FullWidthGrid() {
             <div className={classes.photoFooter}> We dare you not to fall in love with these fall favorites. Although paired perfectly with Pumpkin Spice Latte's, this capsule is anything but basic.</div>
             </Grid>
 
-        </Grid>      
-
-        </section>
+        </Grid>
+        {/* </section> */}
 </div>
   );
               }
