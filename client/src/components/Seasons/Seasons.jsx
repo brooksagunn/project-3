@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Seasons.css';
 import Winter from '../../assets/images/winter-capsule.jpg';
 import Fall from '../../assets/images/fall-capsule.jpg';
@@ -242,11 +242,9 @@ export default function FullWidthGrid() {
     }
     localStorage.setItem("order", JSON.stringify(currentOrder));
   }
-  
-
   return (
       
-<div className='body'>     
+<div class='body'>     
     
         <section className={classes.gridContainer}>
             
@@ -255,17 +253,15 @@ export default function FullWidthGrid() {
             <Grid className={classes.grid} item xs={3} sm={3}>
             <div className={classes.photoTitle}>Winter</div>
               <p className={classes.price}>$199</p>
-                <button className={classes.bagButton, 'addButton'} onClick={addTooBag('winter', winterCount)}>Add to Bag</button>
+                <button className={classes.bagButton}>Add to Bag</button>
             <div className={classes.addBag1}>
-              <Badge color="secondary" badgeContent={winterCount}>
+              <Badge color="secondary" badgeContent={itemCount.Winter}>
                 <LocalMallIcon />{" "}
               </Badge>
                 <ButtonGroup>
                   <Button
                     onClick={() => {
-                      if (winterCount > 0){
-                      setWinterCount(winterCount - 1);
-                      }
+                      setItemCount({...itemCount, Winter: Math.max(itemCount.Winter - 1, 0)});
                     }}
                   >
                     {" "}
@@ -273,7 +269,7 @@ export default function FullWidthGrid() {
                   </Button>
                   <Button
                     onClick={() => {
-                      setWinterCount(winterCount + 1);
+                      setItemCount({...itemCount, Winter: itemCount.Winter + 1});
                     }}
                   >
                     {" "}
@@ -290,18 +286,16 @@ export default function FullWidthGrid() {
             <Grid className={classes.grid} item xs={3} sm={3}>
             <div className={classes.photoTitle}>Spring</div>
             <p className={classes.price}>$149</p>
-            <button className={classes.bagButton, 'addButton'} onClick={addTooBag('spring', springCount)}>Add to Bag</button>
+            <button className={classes.bagButton}>Add to Bag</button>
             <div className={classes.addBag2}>
           <div>
-            <Badge color="secondary" badgeContent={springCount}>
+            <Badge color="secondary" badgeContent={itemCount.Spring}>
             <LocalMallIcon />{" "}
             </Badge>
             <ButtonGroup>
               <Button
                 onClick={() => {
-                  if (springCount > 0) {
-                  setSpringCount(springCount - 1);
-                  }
+                  setItemCount({...itemCount, Spring: Math.max(itemCount.Spring - 1, 0)});
                 }}
               >
                 {" "}
@@ -309,7 +303,7 @@ export default function FullWidthGrid() {
               </Button>
               <Button
                 onClick={() => {
-                  setSpringCount(springCount + 1);
+                  setItemCount({...itemCount, Spring: itemCount.Spring + 1});
                 }}
               >
                 {" "}
@@ -325,18 +319,16 @@ export default function FullWidthGrid() {
             <Grid className={classes.grid} item xs={3} sm={3}>
             <div className={classes.photoTitle}>Summer</div>
             <p className={classes.price}>$179</p>
-            <button className={classes.bagButton , 'addButton'} onClick={addTooBag('summer', summerCount)}>Add to Bag</button>
+            <button className={classes.bagButton}>Add to Bag</button>
             <div className={classes.addBag3}>
           <div>
-            <Badge color="secondary" badgeContent={summerCount}>
+            <Badge color="secondary" badgeContent={itemCount.Summer}>
             <LocalMallIcon />{" "}
             </Badge>
             <ButtonGroup>
               <Button
                 onClick={() => {
-                  if (summerCount > 0){
-                  setSummerCount(summerCount - 1);
-                  }
+                  setItemCount({...itemCount, Summer: Math.max(itemCount.Summer - 1, 0)});
                 }}
               >
                 {" "}
@@ -344,7 +336,7 @@ export default function FullWidthGrid() {
               </Button>
               <Button
                 onClick={() => {
-                  setSummerCount(summerCount + 1);
+                  setItemCount({...itemCount, Summer: itemCount.Summer + 1});
                 }}
               >
                 {" "}
@@ -362,15 +354,13 @@ export default function FullWidthGrid() {
             <p className={classes.price}>$179</p>
             <div className={classes.addBag4}>
           <div>
-            <Badge color="secondary" badgeContent={fallCount}>
+            <Badge color="secondary" badgeContent={itemCount.Fall}>
               <LocalMallIcon />{" "}
             </Badge>
             <ButtonGroup>
               <Button
                 onClick={() => {
-                  if (fallCount > 0){
-                  setFallCount(fallCount - 1);
-                  }
+                  setItemCount({...itemCount, Fall: Math.max(itemCount.Fall - 1, 0)});
                 }}
               >
                 {" "}
@@ -378,7 +368,7 @@ export default function FullWidthGrid() {
               </Button>
               <Button
                 onClick={() => {
-                  setFallCount(fallCount + 1);
+                  setItemCount({...itemCount, Fall: itemCount.Fall + 1});
                 }}
               >
                 {" "}
@@ -387,7 +377,7 @@ export default function FullWidthGrid() {
             </ButtonGroup>
           </div>
         </div>
-            <button className={classes.bagButton, 'addButton'} onClick={addTooBag('fall', fallCount)}>Add to Bag</button>
+            <button className={classes.bagButton}>Add to Bag</button>
             <Paper className={classes.paper}><Product name={seasons[3]}/></Paper>
             <div className={classes.photoFooter}> We dare you not to fall in love with these fall favorites. Although paired perfectly with Pumpkin Spice Latte's, this capsule is anything but basic.</div>
             </Grid>
@@ -397,5 +387,5 @@ export default function FullWidthGrid() {
         </section>
 </div>
   );
-              }
+}
 

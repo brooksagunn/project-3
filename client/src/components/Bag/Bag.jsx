@@ -3,6 +3,7 @@ import './Bag.css';
 let currentOrder
 JSON.parse(localStorage.getItem("order")) ? currentOrder = JSON.parse(localStorage.getItem("order")) : currentOrder = [];
 
+
 export default function Bag() {
     return (
 
@@ -24,9 +25,6 @@ export default function Bag() {
       </table>
             </div>
             <div className="checkout">
-
-
-
             <form action="/create-checkout-session" method="POST">
                 <button type="submit" id="checkout-button" className="waves-effect waves-light btn"><i className="material-icons right"></i>Checkout</button>
             </form>
