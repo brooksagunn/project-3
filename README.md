@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# enCapsulate
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### [Deployed Link](https://encapsulate.herokuapp.com/)
 
-## Available Scripts
+## Table of Contents:
 
-In the project directory, you can run:
+* [Description](#description)
+* [Installing](#installing)
+* [Usage](#usage)
+* [Testing](#testing)
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A clothing-capsule ecommerce site with a sleek, modern interface.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installing
 
-### `npm test`
+The npm packages used for this are as follows:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Stack:
+* *MongoDB*: for the database
+* *Express*: for the server
+* *React*: for the front-end
+* *Node*: for literally everything else
 
-### `npm run build`
+Libraries:
+* *express-session*: for session storage
+* *mongoose*: for the schema
+* *dotenv*: to protect environment variables
+* *bcrypt*: for password encryption
+* *react-router*: for page routing
+* *stripe*: to handle user payments
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Use `npm i` to install all of them at once if you have cloned the repo, or use the Heroku link for the ready-to-use live version.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Upon entering the site, sign-up. You will automatically be redirected to the Seasons page, which contains a card view of capsules for each season. You can add your selection to your cart and navigate to the checkout page to purchase your items. Once there, you will be able to click a button for redirection to stripe for payment handling. Upon filling out the form, you will be brought back to the homepage of the site. From there, you can navigate to Accessories, which is currently stocked with swanky shoes and the same functionality as the Seasons page.  
 
-### `npm run eject`
+## Testing
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Robo3T was employed for DB testing. Insomnia helped with routing requests. 
