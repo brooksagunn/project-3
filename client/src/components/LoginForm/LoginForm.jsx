@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './Login.css';
+import '../Login/Login.css';
 
 
 export default function Login() {
@@ -10,37 +10,11 @@ export default function Login() {
   const loginHandler = (e) => {
     e.preventDefault();
 
-    axios.post('/api/users/login', async (req, res) => {
-        try {
-          const userData = await User.findOne({ where: { username: req.body.username } });
-      
-          if (!userData) {
-            res
-              .status(400)
-              .json({ message: 'Incorrect username, please try again' });
-            return;
-          }
-      
-          const validPassword = await userData.checkPassword(req.body.password);
-      
-          if (!validPassword) {
-            res
-              .status(400)
-              .json({ message: 'Incorrect password, please try again' });
-            return;
-          }
-      
-          req.session.save(() => {
-            req.session.user_id = userData.id;
-            req.session.logged_in = true;
-            
-            res.json({ user: userData, message: 'You are now logged in!' });
-          });
-      
-        } catch (err) {
-          res.status(400).json(err);
+    axios.post('/api/users/login', {
+            email: email,
+            password: password
         }
-      });
+    );
   }
 
   return (
@@ -67,7 +41,7 @@ export default function Login() {
           </div>
         </div>
         <div className="title">
-            <button class="waves-effect waves-light btn"><i class="material-icons right"></i>Log In</button>
+            <button type="submit" class="waves-effect waves-light btn"><i class="material-icons right"></i>Log In</button>
         </div>
       </form>
     </div>  
