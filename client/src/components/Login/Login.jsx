@@ -65,7 +65,7 @@ export default function Login() {
           </div>
         </div>
         <div className="title">
-            <Link to="/seasons"><button class="waves-effect waves-light btn" type="submit" id="signupBtn"><i class="material-icons right"></i>Sign Up</button></Link>
+            <button class="waves-effect waves-light btn" type="submit" id="signupBtn"><i class="material-icons right"></i>Sign Up</button>
         </div>
         <div class="row email">
           <div class="input-field col s6 push-s3">
