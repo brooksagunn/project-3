@@ -1,42 +1,9 @@
 .grid-div {
-    display: grid;
-    grid-template-areas:
-        'navbar'
-        'main'
-        'footer';
-    grid-template-columns: 1fr;
-    grid-template-rows: 5rem 1fr 5em;
-    height: 100%;
-}
-
-main {
-    grid-area: main;
-    /* background-color: red; */
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.p-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px 0 20px 0;
-    align-items: center;
-}
-
-.p-row.center {
-    justify-content: center;
-}
-
-footer {
-    grid-area: footer;
-    background-color: rgb(245, 245, 245);
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    margin-top: 300px;
+    width: 600px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
 }

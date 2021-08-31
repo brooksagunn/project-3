@@ -16,7 +16,6 @@ const useStyles = makeStyles(() => ({
       position: 'relative',
       width: 200,
       height: 360,
-      margin: '20px',
       '&:after': {
         content: '""',
         display: 'block',
@@ -41,25 +40,24 @@ const useStyles = makeStyles(() => ({
     }
 }));
 
+
 export default function Product(props) {
-    const product = props;
     const styles = useStyles();
-    
     return(
         <Card className={styles.card} >
             <CardMedia
                 className={styles.media}
                 image={props.name}
             />
-            <Box
-                py={3}
+            <Box 
+                py={3} 
                 px={2}
                 className={styles.content}
             >
                 <Info>
-                <InfoSubtitle>{product.name}</InfoSubtitle>
-                <InfoTitle>{product.category}</InfoTitle>
-                <InfoCaption>{product.description}</InfoCaption>
+                <InfoSubtitle>Capsule Uno</InfoSubtitle>
+                <InfoTitle>Winter 2021 Collection</InfoTitle>
+                <InfoCaption>Sleek wear for cold air</InfoCaption>
                 </Info>
             </Box>
         </Card>
