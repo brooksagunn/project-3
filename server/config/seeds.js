@@ -20,28 +20,32 @@ db.once("open", async () => {
       {
         name: "fall",
       },
+      {
+        name: "spring",
+      }
     ]);
 
     const products = await Product.create([
       {
-        name: "summer wear",
+        name: "summer capsule",
         description: "wear for the summer",
-        price: 23.99,
-        stock: 3,
+        price: 189.99,
+        stock: 37,
         category: categories[1]._id,
       },
       {
-        name: "winter wear",
+        name: "winter capsule",
         description: "wear for the winter",
-        price: 22.99,
-        stock: 3,
+        price: 199.99,
+        stock: 30,
         category: categories[0]._id,
       },
       {
-        name: "fall wear",
+        name: "fall capsule",
         description: "wear for the fall",
-        price: 18.99,
-        stock: 2,
+        image: "https://www.wardrobeoxygen.com/wp-content/uploads/2018/03/capsule-wardrobe-for-working-from-home-or-for-stay-at-home-moms-500x635.jpg",
+        price: 189.99,
+        stock: 25,
         category: categories[2]._id,
       },
       {
