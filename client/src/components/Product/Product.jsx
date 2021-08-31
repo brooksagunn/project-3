@@ -14,7 +14,7 @@ const useStyles = makeStyles(() => ({
       borderRadius: '1rem',
       boxShadow: 'none',
       position: 'relative',
-      width: 200,
+      width: 300,
       height: 360,
       '&:after': {
         content: '""',
@@ -54,11 +54,6 @@ export default function Product(props) {
                 px={2}
                 className={styles.content}
             >
-                <Info>
-                <InfoSubtitle>Capsule Uno</InfoSubtitle>
-                <InfoTitle>Winter 2021 Collection</InfoTitle>
-                <InfoCaption>Sleek wear for cold air</InfoCaption>
-                </Info>
             </Box>
         </Card>
     );

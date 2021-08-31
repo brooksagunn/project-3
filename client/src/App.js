@@ -7,6 +7,7 @@ import Seasons from './components/Seasons/Seasons';
 import Paragraph from './components/Paragraph/Paragraph';
 import Checkout from './components/CheckoutForm/Checkout/Checkout'
 import ProductGrid from './components/ProductGrid/ProductGrid';
+import Accessories from './components/Accessories/Accessories';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 export default function App() {
@@ -38,6 +39,10 @@ export default function App() {
             </Route>
             <Route exact path="/products">
               <ProductGrid />
+            </Route>
+
+            <Route exact path="/accessories">
+              <Accessories />
             </Route>
 
           </Switch>
